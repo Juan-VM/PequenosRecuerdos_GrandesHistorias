@@ -134,7 +134,7 @@
   <header class="w-full bg-surface-container-low shadow-sm sticky top-0 z-50 transition-colors">
     <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between w-full">
       <!-- Brand Logo / Product Name -->
-      <a class="flex items-center gap-3 active:scale-95 transition-transform duration-150 group" href="#">
+      <a class="flex items-center gap-3 active:scale-95 transition-transform duration-150 group" href="../Inicio/code.html" title="Ir al inicio">
         <span
           class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-bright transition-colors">
           <span class="material-symbols-outlined text-[22px]">favorite</span>
@@ -144,25 +144,26 @@
       <!-- Desktop Navigation Links -->
       <nav aria-label="Navegación principal" class="hidden md:flex items-center gap-8">
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
-          href="#">Inicio</a>
+          href="../Inicio/code.html">Inicio</a>
         <a aria-current="page" class="text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg"
-          href="#">Catálogo</a>
+          href="../Catalogo/code.html">Catálogo</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
-          href="#">Personaliza tu figura</a>
+          href="../PersonalizarFigura/code.html">Personaliza tu figura</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
-          href="#">Nosotros</a>
+          href="../Inicio/code.html#nosotros">Nosotros</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
-          href="#">Contacto</a>
+          href="../Inicio/code.html#contacto">Contacto</a>
       </nav>
       <!-- Trailing Action Cluster -->
       <div class="flex items-center gap-4">
         <a class="hidden sm:inline-flex text-on-surface-variant hover:text-primary text-label-lg font-label-lg transition-colors px-3 py-2 rounded-full active:scale-95"
-          href="#">
+          href="../PanelAdministracion/code.html" title="Ver panel administrativo (demo)">
           Mi Cuenta
         </a>
-        <a class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-label-lg font-label-lg shadow-sm hover:opacity-95 hover:shadow transition-all active:scale-95 duration-150"
-          href="#">
-          Crear Recuerdo
+        <a class="bg-primary text-on-primary px-4 sm:px-6 py-2.5 rounded-full text-label-lg font-label-lg shadow-sm hover:opacity-95 hover:shadow transition-all active:scale-95 duration-150"
+          href="../PersonalizarFigura/code.html" title="Crear Recuerdo">
+          <span class="hidden sm:inline">Crear Recuerdo</span>
+          <span class="sm:hidden">Crear</span>
         </a>
       </div>
     </div>
@@ -177,7 +178,7 @@
           <span class="material-symbols-outlined text-[16px]">eco</span>
           <span>Artesanía Sensible &amp; Exclusiva</span>
         </div>
-        <h1 class="text-display-lg font-display-lg text-on-surface text-balance">
+        <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface text-balance">
           Catálogo de Figuras Artesanales
         </h1>
         <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
@@ -205,9 +206,9 @@
     <!-- 4 & 5. Layout Principal: Filtros y Cuadrícula de Figuras -->
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
       <!-- Cuadrícula de Figuras (9 columnas en lg) -->
-      <section class="lg:col-span-9 space-y-8">
+      <section class="lg:col-span-12 space-y-8">
         <!-- Grid de Productos (4 cols desktop, adaptable) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
           <!-- Tarjeta 1: Perrito Guardián en Jardín -->
           <article
             class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
@@ -248,14 +249,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$38 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -298,14 +299,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$52 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -348,14 +349,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$40 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -398,14 +399,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$48 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -448,14 +449,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$37 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -498,14 +499,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$32 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -548,14 +549,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$44 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -598,14 +599,14 @@
                 <span class="text-label-md font-label-md text-on-surface-variant">$59 USD</span>
               </div>
               <div class="grid grid-cols-2 gap-2">
-                <button
+                <a href="../VisualizarDedicatoria/code.html"
                   class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
                   Ver detalles
-                </button>
-                <button
+                </a>
+                <a href="../PersonalizarFigura/code.html"
                   class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
                   Personalizar
-                </button>
+                </a>
               </div>
             </div>
           </article>
@@ -653,11 +654,11 @@
       </div>
       <div class="relative z-10 flex flex-col sm:flex-row items-center gap-4 shrink-0">
         <a class="px-8 py-3.5 rounded-full bg-primary text-on-primary text-label-lg font-label-lg hover:opacity-95 shadow transition-all active:scale-95"
-          href="#">
+          href="../PersonalizarFigura/code.html">
           Cotizar mi Proyecto
         </a>
         <a class="px-6 py-3.5 rounded-full border border-secondary text-secondary hover:bg-surface-container-highest transition-colors text-label-lg font-label-lg active:scale-95"
-          href="#">
+          href="../Inicio/code.html#nosotros">
           Ver Galería de Encargos
         </a>
       </div>
@@ -684,6 +685,7 @@
       </div>
     </div>
   </footer>
+  <script src="../assets/demo-nav.js"></script>
 </body>
 
 </html>

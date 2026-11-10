@@ -165,14 +165,14 @@
 </head>
 
 <body
-  class="bg-surface text-on-surface antialiased min-h-screen flex selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+  class="demo-no-dock-pad bg-surface text-on-surface antialiased min-h-screen flex selection:bg-secondary-fixed selection:text-on-secondary-fixed">
   <!-- ================= SIDEBAR ================= -->
   <aside
     class="w-72 bg-surface-container-low flex flex-col justify-between shrink-0 min-h-screen border-r border-outline-variant/30 sticky top-0 h-screen z-20">
     <div class="flex flex-col h-full">
       <!-- Brand Logo Area -->
       <div class="p-6 pb-4">
-        <div class="flex items-center gap-3">
+        <a href="../Inicio/code.html" class="flex items-center gap-3" title="Ir al sitio público">
           <div class="w-10 h-10 rounded-2xl bg-primary flex items-center justify-center text-on-primary shadow-sm">
             <span class="material-symbols-outlined text-2xl" data-icon="auto_stories">auto_stories</span>
           </div>
@@ -182,18 +182,18 @@
             <span class="font-label-sm text-label-sm tracking-wider uppercase text-primary font-bold">Taller
               Admin</span>
           </div>
-        </div>
+        </a>
       </div>
 
       <!-- Navigation Links -->
       <nav class="flex-1 px-4 py-4 space-y-1 overflow-y-auto">
         <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
-          href="#">
+          href="../PanelAdministracion/code.html">
           <span class="material-symbols-outlined text-xl" data-icon="dashboard">dashboard</span>
           <span>Dashboard / Resumen</span>
         </a>
         <a class="flex items-center justify-between px-4 py-3 rounded-2xl font-label-lg text-label-lg bg-primary-container/30 text-primary font-bold transition-colors"
-          href="#">
+          href="../PanelAdministracion/code.html">
           <div class="flex items-center gap-3.5">
             <span class="material-symbols-outlined text-xl" data-icon="shopping_basket" data-weight="fill"
               style="font-variation-settings: 'FILL' 1;">shopping_basket</span>
@@ -203,30 +203,38 @@
             nuevos</span>
         </a>
         <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
-          href="#">
+          href="../Catalogo/code.html">
           <span class="material-symbols-outlined text-xl" data-icon="palette">palette</span>
           <span>Catálogo &amp; Figuras</span>
         </a>
         <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
-          href="#">
+          href="../Catalogo/code.html">
           <span class="material-symbols-outlined text-xl" data-icon="inventory_2">inventory_2</span>
           <span>Materiales &amp; Stock</span>
         </a>
         <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
-          href="#">
+          href="../VisualizarDedicatoria/code.html">
           <span class="material-symbols-outlined text-xl" data-icon="qr_code_2">qr_code_2</span>
           <span>Recuerdos Digitales (QR)</span>
         </a>
         <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
-          href="#">
+          href="../PanelAdministracion/code.html">
           <span class="material-symbols-outlined text-xl" data-icon="group">group</span>
           <span>Clientes</span>
         </a>
         <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors"
-          href="#">
+          href="../PanelAdministracion/code.html">
           <span class="material-symbols-outlined text-xl" data-icon="tune">tune</span>
           <span>Configuración de Taller</span>
         </a>
+        <div class="pt-3 mt-3 border-t border-outline-variant/30">
+          <a class="flex items-center gap-3.5 px-4 py-3 rounded-2xl font-label-lg text-label-lg text-secondary hover:text-primary hover:bg-surface-container transition-colors"
+            href="../Inicio/code.html">
+            <span class="material-symbols-outlined text-xl" data-icon="storefront">storefront</span>
+            <span>Ver Sitio Público</span>
+            <span class="material-symbols-outlined text-base ml-auto" data-icon="open_in_new">open_in_new</span>
+          </a>
+        </div>
       </nav>
       <!-- Artisan Profile Card -->
       <div class="p-4 border-t border-outline-variant/30 bg-surface-container/60">
@@ -281,7 +289,7 @@
       </div>
     </header>
     <!-- CONTENT WRAPPER -->
-    <main class="p-8 space-y-8 max-w-[1400px]">
+    <main class="p-8 pb-28 space-y-8 max-w-[1400px]">
       <!-- WELCOME TITLE & OVERVIEW -->
       <div class="flex items-baseline justify-between">
         <div>
@@ -953,9 +961,13 @@
     <!-- Drawer Footer Actions -->
     <div class="p-6 bg-surface-container border-t border-outline-variant/30 space-y-2">
       <div class="grid grid-cols-1 gap-3">
-
-        <button
+        <a href="../VisualizarDedicatoria/code.html"
           class="w-full flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-on-primary font-label-lg text-label-lg py-2.5 rounded-full transition-all craft-shadow">
+          <span class="material-symbols-outlined text-lg" data-icon="open_in_new">open_in_new</span>
+          <span>Ver dedicatoria digital</span>
+        </a>
+        <button
+          class="w-full flex items-center justify-center gap-2 border border-secondary text-secondary hover:bg-secondary-fixed/30 font-label-lg text-label-lg py-2.5 rounded-full transition-all">
           <span class="material-symbols-outlined text-lg" data-icon="refresh">refresh</span>
           <span>Regenerar QR</span>
         </button>
@@ -1004,6 +1016,7 @@
       alert('¡Enlace exclusivo copiado al portapapeles!');
     }
   </script>
+  <script src="../assets/demo-nav.js"></script>
 </body>
 
 </html>

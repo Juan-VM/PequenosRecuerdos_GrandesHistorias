@@ -171,17 +171,21 @@
 </head>
 
 <body
-  class="bg-surface text-on-surface antialiased min-h-screen selection:bg-secondary-fixed selection:text-secondary flex flex-col items-center">
+  class="demo-no-dock-pad bg-surface text-on-surface antialiased min-h-screen selection:bg-secondary-fixed selection:text-secondary flex flex-col items-center">
   <!-- Mobile Screen Container -->
   <div class="w-full max-w-md bg-surface min-h-screen relative flex flex-col pb-36 shadow-warm-subtle">
     <!-- Top Header Bar -->
     <header
       class="sticky top-0 z-30 bg-surface/90 backdrop-blur-md px-5 py-4 flex items-center justify-between border-b border-surface-container-highest">
-      <div class="flex items-center gap-2">
+      <a href="../Inicio/code.html" class="flex items-center gap-2" title="Ir al inicio">
         <span class="material-symbols-outlined text-primary text-2xl" data-icon="auto_awesome">auto_awesome</span>
         <span class="font-headline-sm text-headline-sm text-secondary tracking-tight">Pequeños Recuerdos</span>
-      </div>
-
+      </a>
+      <a href="../Catalogo/code.html"
+        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-secondary font-label-md text-label-md border border-outline-variant/40 hover:bg-surface-container-high transition-colors">
+        <span class="material-symbols-outlined text-base" data-icon="arrow_back">arrow_back</span>
+        Catálogo
+      </a>
     </header>
     <!-- Context Meta Banner / Badges -->
     <div class="px-5 pt-5 pb-2 flex flex-col gap-2">
@@ -326,6 +330,25 @@
         </div>
       </div>
     </section>
+    <!-- Demo Navigation Actions -->
+    <section class="px-5 mb-8">
+      <div class="bg-primary-fixed/50 rounded-2xl p-5 border border-primary-container/40 text-center">
+        <p class="font-headline-sm text-headline-sm text-secondary">¿Te gustaría crear un recuerdo así?</p>
+        <p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Esta es una vista de demostración del álbum
+          digital que se abre al escanear el código QR.</p>
+        <div class="mt-4 flex flex-col gap-2">
+          <a href="../PersonalizarFigura/code.html"
+            class="inline-flex items-center justify-center gap-2 bg-primary text-white px-5 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-primary-container hover:text-on-primary-container transition-colors">
+            <span class="material-symbols-outlined text-lg" data-icon="magic_button">magic_button</span>
+            Crear mi recuerdo
+          </a>
+          <a href="../Inicio/code.html"
+            class="inline-flex items-center justify-center gap-2 border border-secondary text-secondary px-5 py-2.5 rounded-full font-label-lg text-label-lg hover:bg-surface-container transition-colors">
+            Volver al inicio
+          </a>
+        </div>
+      </div>
+    </section>
     <!-- Shared Footnote / Seal -->
     <div class="px-6 py-4 text-center">
       <div class="w-10 h-0.5 bg-outline-variant/50 mx-auto mb-4 rounded-full"></div>
@@ -334,43 +357,7 @@
       </p>
     </div>
 
-    <!-- Interactive Logic -->
-    <script>
-      // Modal Interactions
-      const openModalBtn = document.getElementById('open-message-modal');
-      const closeModalBtn = document.getElementById('close-modal');
-      const modal = document.getElementById('message-modal');
-      const submitMsgBtn = document.getElementById('submit-message');
-
-      openModalBtn.addEventListener('click', () => {
-        modal.classList.remove('hidden');
-      });
-
-      closeModalBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-      });
-
-      submitMsgBtn.addEventListener('click', () => {
-        modal.classList.add('hidden');
-        showToast('Mensaje de cariño enviado a la familia');
-      });
-
-      const createBtn = document.getElementById('create-remembrance');
-      createBtn.addEventListener('click', () => {
-        showToast('Redirigiendo a configurar un nuevo recuerdo...');
-      });
-
-      // Toast Helper
-      function showToast(message) {
-        const toast = document.getElementById('toast');
-        const toastText = document.getElementById('toast-text');
-        toastText.textContent = message;
-        toast.classList.remove('opacity-0', 'pointer-events-none');
-        setTimeout(() => {
-          toast.classList.add('opacity-0', 'pointer-events-none');
-        }, 3000);
-      }
-    </script>
+    <script src="../assets/demo-nav.js"></script>
 </body>
 
 </html>

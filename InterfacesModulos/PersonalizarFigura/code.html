@@ -152,7 +152,7 @@
       <!-- Brand & Section Anchor -->
       <div class="flex items-center gap-6">
         <a class="text-headline-md font-headline-md text-secondary tracking-tight active:scale-95 transition-transform duration-150"
-          href="#">
+          href="../Inicio/code.html" title="Ir al inicio">
           Pequeños Recuerdos
         </a>
 
@@ -160,27 +160,29 @@
       <!-- Navigation Links -->
       <nav class="hidden lg:flex items-center gap-8">
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
-          href="#">Inicio</a>
+          href="../Inicio/code.html">Inicio</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
-          href="#">Catálogo</a>
+          href="../Catalogo/code.html">Catálogo</a>
         <a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg"
-          href="#">Personaliza tu figura</a>
+          href="../PersonalizarFigura/code.html">Personaliza tu figura</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
-          href="#">Nosotros</a>
+          href="../Inicio/code.html#nosotros">Nosotros</a>
         <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
-          href="#">Contacto</a>
+          href="../Inicio/code.html#contacto">Contacto</a>
       </nav>
       <!-- Actions -->
       <div class="flex items-center gap-4">
         <a class="hidden sm:inline-flex text-on-surface-variant hover:text-primary text-label-lg font-label-lg transition-colors px-3 py-2"
-          href="#">
+          href="../PanelAdministracion/code.html" title="Ver panel administrativo (demo)">
           Mi Cuenta
         </a>
 
-        <button
-          class="bg-primary hover:bg-primary-container text-white hover:text-on-primary-container px-6 py-2.5 rounded-full text-label-lg font-label-lg transition-all duration-200 active:scale-95 shadow-sm">
-          Crear Recuerdo
-        </button>
+        <a href="../Catalogo/code.html"
+          class="bg-primary hover:bg-primary-container text-white hover:text-on-primary-container px-4 sm:px-6 py-2.5 rounded-full text-label-lg font-label-lg transition-all duration-200 active:scale-95 shadow-sm"
+          title="Elegir una figura en el catálogo">
+          <span class="hidden sm:inline">Crear Recuerdo</span>
+          <span class="sm:hidden">Crear</span>
+        </a>
       </div>
     </div>
   </header>
@@ -251,7 +253,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
       <!-- Columna Izquierda: Formulario Activo (7 cols) -->
       <section
-        class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-10 rounded-3xl border border-primary-container/25 custom-warm-shadow space-y-8">
+        class="lg:col-span-8 lg:col-start-3 bg-surface-container-lowest p-8 md:p-10 rounded-3xl border border-primary-container/25 custom-warm-shadow space-y-8">
         <!-- Step Header -->
         <div class="border-b border-surface-container-high pb-6">
           <div
@@ -267,7 +269,7 @@
           </p>
         </div>
         <!-- Formulario -->
-        <form class="space-y-6" onsubmit="event.preventDefault();">
+        <form class="space-y-6" id="config-form" onsubmit="event.preventDefault();">
           <!-- Campo 1: Nombre -->
           <div class="space-y-2">
             <label class="block text-title-md font-title-md text-on-surface" for="recipient-name">
@@ -404,13 +406,12 @@
           <!-- Botones de Navegación del Flujo -->
           <div
             class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-surface-container-high">
-            <button
-              class="w-full sm:w-auto px-6 py-3.5 rounded-full border-2 border-secondary text-secondary hover:bg-secondary/10 transition-colors duration-200 text-label-lg font-label-lg flex items-center justify-center gap-2"
-              type="button">
+            <a href="../Catalogo/code.html"
+              class="w-full sm:w-auto px-6 py-3.5 rounded-full border-2 border-secondary text-secondary hover:bg-secondary/10 transition-colors duration-200 text-label-lg font-label-lg flex items-center justify-center gap-2">
               <span class="material-symbols-outlined text-lg" data-icon="arrow_back">arrow_back</span>
               Volver a Base
-            </button>
-            <button
+            </a>
+            <button id="btn-continuar"
               class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-primary hover:bg-primary-container text-white hover:text-on-primary-container shadow-md hover:shadow-lg transition-all duration-200 text-label-lg font-label-lg font-bold flex items-center justify-center gap-2 group active:scale-95"
               type="submit">
               <span>Continuar al Resumen Final</span>
@@ -480,14 +481,19 @@
             quienes amamos.</p>
         </div>
         <div class="flex flex-wrap gap-6 text-label-md font-label-md">
-          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sello de
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200"
+            href="../Inicio/code.html#nosotros">Sello de
             Autenticidad</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Guía de
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200"
+            href="../Inicio/code.html#nosotros">Guía de
             Cuidados</a>
-          <a class="text-primary underline underline-offset-4" href="#">Configurador de Recuerdos</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Políticas de
+          <a class="text-primary underline underline-offset-4" href="../PersonalizarFigura/code.html">Configurador de
+            Recuerdos</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200"
+            href="../Inicio/code.html#contacto">Políticas de
             Envío</a>
-          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contacto
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200"
+            href="../Inicio/code.html#contacto">Contacto
             Cálido</a>
         </div>
       </div>
@@ -502,6 +508,14 @@
       </div>
     </div>
   </footer>
+  <script>
+    // Demo: al continuar, mostramos el visor de dedicatoria con el resultado.
+    document.getElementById("config-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      window.location.href = "../VisualizarDedicatoria/code.html";
+    });
+  </script>
+  <script src="../assets/demo-nav.js"></script>
 </body>
 
 </html>

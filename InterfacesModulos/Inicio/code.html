@@ -155,7 +155,7 @@
     class="bg-surface dark:bg-surface bg-surface-container-low dark:bg-surface-container-low shadow-sm sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between w-full">
       <!-- Brand Logo -->
-      <a class="flex items-center gap-2.5 group" href="#">
+      <a class="flex items-center gap-2.5 group" href="../Inicio/code.html" title="Ir al inicio">
         <span
           class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform duration-200">
           <span class="material-symbols-outlined text-headline-sm" data-icon="spa">spa</span>
@@ -172,11 +172,11 @@
           Inicio
         </a>
         <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
-          href="#catalogo">
+          href="../Catalogo/code.html">
           Catálogo
         </a>
         <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
-          href="#personaliza">
+          href="../PersonalizarFigura/code.html">
           Personaliza tu figura
         </a>
         <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
@@ -192,14 +192,14 @@
       <div class="flex items-center gap-4">
         <!-- Mi Cuenta (Secondary Action) -->
         <a class="hidden sm:inline-flex items-center text-label-lg font-label-lg text-secondary hover:text-primary font-semibold transition-colors duration-200 px-3 py-2 rounded-full hover:bg-surface-container active:scale-95"
-          href="#cuenta">
+          href="../PanelAdministracion/code.html" title="Ver panel administrativo (demo)">
           Mi Cuenta
         </a>
         <!-- Crear Recuerdo (Primary Action) -->
-        <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full text-label-lg font-label-lg font-semibold hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-warm-sm active:scale-95"
-          href="#personaliza">
+        <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-3 sm:px-6 py-2.5 rounded-full text-label-lg font-label-lg font-semibold hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-warm-sm active:scale-95"
+          href="../PersonalizarFigura/code.html" title="Crear Recuerdo">
           <span class="material-symbols-outlined text-title-md" data-icon="magic_button">magic_button</span>
-          <span>Crear Recuerdo</span>
+          <span class="hidden sm:inline">Crear Recuerdo</span>
         </a>
       </div>
     </div>
@@ -218,7 +218,7 @@
               <span>Artesanía Emocional y Digital</span>
             </div>
             <!-- Headline -->
-            <h1 class="text-display-lg font-display-lg text-on-surface text-balance">
+            <h1 class="text-display-lg-mobile md:text-display-lg font-display-lg-mobile md:font-display-lg text-on-surface text-balance">
               Pequeños Recuerdos, <br class="hidden sm:inline" />
               <span class="text-primary italic">Grandes Historias</span>
             </h1>
@@ -230,12 +230,12 @@
             <!-- CTA Cluster -->
             <div class="flex flex-wrap items-center gap-4 pt-2">
               <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-warm-sm hover:shadow-warm-md active:scale-95"
-                href="#catalogo">
+                href="../Catalogo/code.html">
                 <span>Explorar Catálogo</span>
                 <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
               </a>
               <a class="inline-flex items-center gap-2 border-2 border-secondary text-secondary bg-surface/50 px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-secondary-fixed hover:border-secondary transition-all duration-200 active:scale-95"
-                href="#personaliza">
+                href="../PersonalizarFigura/code.html">
                 <span class="material-symbols-outlined" data-icon="palette">palette</span>
                 <span>Crear mi figura</span>
               </a>
@@ -399,11 +399,11 @@
               <p class="text-label-md font-label-md font-bold text-on-surface">Escanea la muestra de prueba</p>
               <p class="text-body-sm font-body-sm text-on-surface-variant">Prueba cómo tus seres queridos verán su
                 dedicatoria.</p>
-              <button
+              <a href="../VisualizarDedicatoria/code.html"
                 class="mt-2 text-label-sm font-label-sm text-primary font-bold hover:underline inline-flex items-center gap-1">
                 <span>Ver demostración en vivo</span>
                 <span class="material-symbols-outlined text-[14px]" data-icon="open_in_new">open_in_new</span>
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -522,7 +522,7 @@
     </section>
 
     <!-- Testimonios Emocionales -->
-    <section class="py-20 bg-surface-container-low">
+    <section class="py-20 bg-surface-container-low" id="nosotros">
       <div class="max-w-7xl mx-auto px-6 md:px-10">
         <div class="text-center max-w-2xl mx-auto mb-16">
           <span class="text-label-md font-label-md text-secondary uppercase tracking-widest font-bold">Historias
@@ -640,7 +640,7 @@
       </div>
     </section>
     <!-- Call to Action Banner -->
-    <section class="py-16 bg-surface">
+    <section class="py-16 bg-surface" id="contacto">
       <div class="max-w-7xl mx-auto px-6 md:px-10">
         <div
           class="relative bg-primary-fixed/60 rounded-3xl p-10 md:p-16 overflow-hidden border border-primary-container/40 flex flex-col md:flex-row items-center justify-between gap-8">
@@ -656,12 +656,12 @@
           </div>
           <div class="flex flex-col sm:flex-row gap-4 z-10 flex-shrink-0">
             <a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all duration-200 shadow-warm-sm active:scale-95"
-              href="#personaliza">
+              href="../PersonalizarFigura/code.html">
               <span class="material-symbols-outlined text-[20px]" data-icon="magic_button">magic_button</span>
               <span>Comenzar mi recuerdo</span>
             </a>
             <a class="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-surface-bright transition-all duration-200 active:scale-95"
-              href="#contacto">
+              href="mailto:hola@pequenosrecuerdos.cl?subject=Quiero%20hablar%20con%20un%20artesano">
               <span>Hablar con un artesano</span>
             </a>
           </div>
@@ -713,32 +713,44 @@
           <ul class="flex flex-col gap-2">
             <li>
               <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
-                href="#">
+                href="#nosotros">
                 Sello de Autenticidad
               </a>
             </li>
             <li>
               <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
-                href="#">
+                href="#nosotros">
                 Guía de Cuidados
               </a>
             </li>
             <li>
               <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
-                href="#">
+                href="../PersonalizarFigura/code.html">
                 Configurador de Recuerdos
               </a>
             </li>
             <li>
               <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
-                href="#">
+                href="#contacto">
                 Políticas de Envío
               </a>
             </li>
             <li>
               <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
-                href="#">
+                href="#contacto">
                 Contacto Cálido
+              </a>
+            </li>
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="../VisualizarDedicatoria/code.html">
+                Visor de Dedicatorias (demo)
+              </a>
+            </li>
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="../PanelAdministracion/code.html">
+                Panel del Taller (demo)
               </a>
             </li>
           </ul>
@@ -782,6 +794,7 @@
       </div>
     </div>
   </footer>
+  <script src="../assets/demo-nav.js"></script>
 </body>
 
 </html>
