@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Configurador de Recuerdos Únicos - Pequeños Recuerdos</title>
+  <!-- Google Fonts: Quicksand & Nunito Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#7e5630",
+            "on-surface": "#1d1b16",
+            "surface-container": "#f3ede4",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#d9e8bd",
+            "tertiary-container": "#c89992",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e7e2d9",
+            "surface-tint": "#556340",
+            "surface-bright": "#fff9ef",
+            "on-background": "#1d1b16",
+            "surface-container-high": "#ede7df",
+            "surface-variant": "#e7e2d9",
+            "on-secondary-container": "#79512c",
+            "inverse-on-surface": "#f6f0e7",
+            "surface": "#fff9ef",
+            "on-primary-container": "#323f1f",
+            "background": "#fff9ef",
+            "outline": "#76786e",
+            "secondary-fixed": "#ffdcc0",
+            "error": "#ba1a1a",
+            "primary": "#556340",
+            "on-primary-fixed": "#141f04",
+            "tertiary-fixed-dim": "#edbbb4",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ffdad5",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#dfd9d1",
+            "secondary-fixed-dim": "#f1bc8e",
+            "on-tertiary-container": "#53312d",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed-variant": "#633f1b",
+            "outline-variant": "#c6c8bb",
+            "inverse-surface": "#32302a",
+            "primary-container": "#9baa82",
+            "error-container": "#ffdad6",
+            "secondary-container": "#fdc798",
+            "tertiary": "#7c554f",
+            "primary-fixed-dim": "#bdcca2",
+            "inverse-primary": "#bdcca2",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#2d1600",
+            "on-primary-fixed-variant": "#3e4b2b",
+            "on-tertiary-fixed": "#2f1310",
+            "surface-container-low": "#f9f3ea",
+            "on-surface-variant": "#45483f",
+            "on-tertiary-fixed-variant": "#613e39"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Quicksand"],
+            "label-md": ["Nunito Sans"],
+            "headline-lg": ["Quicksand"],
+            "label-lg": ["Nunito Sans"],
+            "body-lg": ["Nunito Sans"],
+            "title-md": ["Quicksand"],
+            "headline-sm": ["Quicksand"],
+            "headline-lg-mobile": ["Quicksand"],
+            "body-md": ["Nunito Sans"],
+            "display-lg": ["Quicksand"],
+            "headline-md": ["Quicksand"],
+            "label-sm": ["Nunito Sans"],
+            "body-sm": ["Nunito Sans"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["34px", { "lineHeight": "42px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .custom-warm-shadow {
+      box-shadow: 0 4px 20px -2px rgba(68, 60, 52, 0.06);
+    }
+
+    .custom-float-shadow {
+      box-shadow: 0 12px 32px -4px rgba(68, 60, 52, 0.10);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background text-on-surface antialiased font-body-md text-body-md min-h-screen flex flex-col selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- TopNavBar (Shared Component) -->
+  <header class="bg-surface shadow-sm sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between w-full">
+      <!-- Brand & Section Anchor -->
+      <div class="flex items-center gap-6">
+        <a class="text-headline-md font-headline-md text-secondary tracking-tight active:scale-95 transition-transform duration-150"
+          href="#">
+          Pequeños Recuerdos
+        </a>
+
+      </div>
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-8">
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
+          href="#">Inicio</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
+          href="#">Catálogo</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg"
+          href="#">Personaliza tu figura</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
+          href="#">Nosotros</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg"
+          href="#">Contacto</a>
+      </nav>
+      <!-- Actions -->
+      <div class="flex items-center gap-4">
+        <a class="hidden sm:inline-flex text-on-surface-variant hover:text-primary text-label-lg font-label-lg transition-colors px-3 py-2"
+          href="#">
+          Mi Cuenta
+        </a>
+
+        <button
+          class="bg-primary hover:bg-primary-container text-white hover:text-on-primary-container px-6 py-2.5 rounded-full text-label-lg font-label-lg transition-all duration-200 active:scale-95 shadow-sm">
+          Crear Recuerdo
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- Progress Bar / Stepper Section -->
+  <section class="bg-surface-container-low border-b border-outline-variant/30 py-6">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="flex items-center justify-between relative">
+        <!-- Connecting Line Background -->
+        <div class="absolute left-10 right-10 top-5 -translate-y-1/2 h-1 bg-surface-container-highest z-0"></div>
+        <!-- Progress Completed Line (Steps 1 to 4) -->
+        <div class="absolute left-10 top-5 -translate-y-1/2 h-1 bg-primary z-0 transition-all duration-500"
+          style="width: 75%;"></div>
+        <!-- Step 1: Completado -->
+        <div class="relative z-10 flex flex-col items-center group cursor-pointer">
+          <div
+            class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-label-lg shadow-sm">
+            <span class="material-symbols-outlined text-sm font-bold" data-icon="check">check</span>
+          </div>
+          <span class="mt-2 text-label-md font-label-md text-on-surface font-semibold text-center">Paso 1: Selección de
+            Modelo</span>
+          <span class="text-label-sm font-label-sm text-primary">Completado ✓</span>
+        </div>
+        <!-- Step 2: Completado -->
+        <div class="relative z-10 flex flex-col items-center group cursor-pointer">
+          <div
+            class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-label-lg shadow-sm">
+            <span class="material-symbols-outlined text-sm font-bold" data-icon="check">check</span>
+          </div>
+          <span class="mt-2 text-label-md font-label-md text-on-surface font-semibold text-center">Paso 2:
+            Personalización de Figura</span>
+          <span class="text-label-sm font-label-sm text-primary">Completado ✓</span>
+        </div>
+        <!-- Step 3: Completado -->
+        <div class="relative z-10 flex flex-col items-center group cursor-pointer">
+          <div
+            class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold text-label-lg shadow-sm">
+            <span class="material-symbols-outlined text-sm font-bold" data-icon="check">check</span>
+          </div>
+          <span class="mt-2 text-label-md font-label-md text-on-surface font-semibold text-center">Paso 3: Material de
+            la Base</span>
+          <span class="text-label-sm font-label-sm text-primary">Completado ✓</span>
+        </div>
+        <!-- Step 4: Activo -->
+        <div class="relative z-10 flex flex-col items-center">
+          <div
+            class="w-10 h-10 rounded-full bg-white border-2 border-primary text-primary flex items-center justify-center font-bold text-label-lg ring-4 ring-primary-fixed/50 shadow-md">
+            <span>4</span>
+          </div>
+          <span class="mt-2 text-label-md font-label-md text-primary font-bold text-center">Paso 4: Contenido Digital
+            QR</span>
+          <span class="text-label-sm font-label-sm text-secondary font-bold">En Edición Actual</span>
+        </div>
+        <!-- Step 5: Pendiente -->
+        <div class="relative z-10 flex flex-col items-center opacity-65 group">
+          <div
+            class="w-10 h-10 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center font-bold text-label-lg">
+            <span>5</span>
+          </div>
+          <span class="mt-2 text-label-md font-label-md text-on-surface-variant font-medium text-center">Paso 5: Resumen
+            y Confirmación</span>
+          <span class="text-label-sm font-label-sm text-outline">Próximo paso</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Main Configurator Layout -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-6 md:px-10 py-10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+      <!-- Columna Izquierda: Formulario Activo (7 cols) -->
+      <section
+        class="lg:col-span-7 bg-surface-container-lowest p-8 md:p-10 rounded-3xl border border-primary-container/25 custom-warm-shadow space-y-8">
+        <!-- Step Header -->
+        <div class="border-b border-surface-container-high pb-6">
+          <div
+            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed text-label-sm font-label-sm font-bold mb-3">
+            <span class="material-symbols-outlined text-xs" data-icon="qr_code_2">qr_code_2</span> Portal QR Exclusivo
+          </div>
+          <h1 class="text-headline-lg font-headline-lg text-on-surface tracking-tight">
+            Paso 4: Crea el alma de tu recuerdo (Portal QR)
+          </h1>
+          <p class="text-body-md font-body-md text-on-surface-variant mt-2">
+            Este contenido aparecerá cuando la persona especial escanee el código grabado en la figura. Puedes editarlo
+            libremente en cualquier momento.
+          </p>
+        </div>
+        <!-- Formulario -->
+        <form class="space-y-6" onsubmit="event.preventDefault();">
+          <!-- Campo 1: Nombre -->
+          <div class="space-y-2">
+            <label class="block text-title-md font-title-md text-on-surface" for="recipient-name">
+              Nombre de la persona o mascota que recibe el homenaje <span class="text-error">*</span>
+            </label>
+            <div class="relative">
+              <span
+                class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/60"
+                data-icon="favorite">favorite</span>
+              <input
+                class="w-full pl-12 pr-4 py-3.5 bg-surface-bright rounded-2xl border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-on-surface-variant/50 transition-all font-body-md text-body-md"
+                id="recipient-name" placeholder="Ej: Para el abuelo Manuel o Mi gatito Tom" type="text"
+                value="Para nuestra fiel compañera Luna" />
+            </div>
+            <p class="text-label-sm font-label-sm text-on-surface-variant">Este nombre encabezará la tarjeta interactiva
+              de bienvenida.</p>
+          </div>
+          <!-- Campo 2: Fecha especial -->
+          <div class="space-y-2">
+            <label class="block text-title-md font-title-md text-on-surface" for="special-date">
+              Fecha especial o conmemorativa <span class="text-error">*</span>
+            </label>
+            <div class="relative">
+              <span
+                class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant/60"
+                data-icon="calendar_month">calendar_month</span>
+              <input
+                class="w-full pl-12 pr-4 py-3.5 bg-surface-bright rounded-2xl border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface font-body-md text-body-md transition-all"
+                id="special-date" placeholder="Día, mes y año significativo" type="text" value="14 de Febrero, 2021" />
+            </div>
+          </div>
+          <!-- Campo 3: Dedicatoria -->
+          <div class="space-y-2">
+            <div class="flex items-center justify-between">
+              <label class="block text-title-md font-title-md text-on-surface" for="dedication-letter">
+                Dedicatoria o carta desde el corazón <span class="text-error">*</span>
+              </label>
+              <span class="text-label-sm font-label-sm text-outline">184 / 600 caracteres</span>
+            </div>
+
+            <textarea
+              class="w-full p-4 bg-surface-bright rounded-2xl border border-outline-variant/50 focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-on-surface-variant/50 transition-all font-body-md text-body-md resize-none"
+              id="dedication-letter" placeholder="Escribe aquí las palabras que atesorarán con ternura infinita..."
+              rows="4">Gracias por 12 años de amor incondicional, colitas felices y siestas bajo el sol tibio. Te llevamos para siempre en cada rincón del corazón y de este hogar.</textarea>
+          </div>
+          <!-- Campo 4: Subida de fotos Drag & Drop -->
+          <div class="space-y-3">
+            <div class="flex items-center justify-between">
+              <label class="block text-title-md font-title-md text-on-surface">
+                Sube las fotografías que guardará el recuerdo (3 de 6 subidas)
+              </label>
+              <span class="text-label-sm font-label-sm text-primary font-medium">Arrastra para reordenar</span>
+            </div>
+            <!-- Upload Drop Area -->
+            <div
+              class="border-2 border-dashed border-primary-container rounded-2xl p-6 text-center bg-surface-bright/70 hover:bg-surface-container-low transition-colors cursor-pointer group">
+              <div class="flex flex-col items-center justify-center gap-2">
+                <div
+                  class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                  <span class="material-symbols-outlined text-2xl"
+                    data-icon="add_photo_alternate">add_photo_alternate</span>
+                </div>
+                <div>
+                  <p class="text-body-md font-body-md font-medium text-on-surface">Haz clic o arrastra más fotos
+                    memorables aquí</p>
+                  <p class="text-label-sm font-label-sm text-on-surface-variant">PNG, JPG o WEBP hasta 10MB por archivo
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Previsualización de 3 fotos cargadas -->
+            <div class="grid grid-cols-3 gap-3 pt-2">
+              <!-- Foto 1 (Principal) -->
+              <div
+                class="relative group rounded-xl overflow-hidden border-2 border-primary aspect-square bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  data-alt="Close-up photograph of a sweet golden-brown mixed-breed rescue dog resting peacefully on a sunlit wooden porch, captured in soft natural morning light with warm gentle earthy tones and an intimate nostalgic atmosphere"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdVzlLRFh5u17eWx-RCEhi3x6uPNcdl23mhbb7W4xZFeipuvz1z57ufHi8WrQrlz85T3UWf2Q9SeTILdO9oAADy87dRSR_vl42VbP8b0onf6hhA0pzigmOGvywgblSQI0fViBaalE8RzllNl6pBA7EOR-17dMNBeY-oSfskXtZLxo1reOm1RLgiF1JCzKZN4AsDe-AeNCluMFN1k-di5SdLsLDz65hRW7SX5qGSI8" />
+                <div
+                  class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                  <button
+                    class="w-7 h-7 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white"
+                    title="Reordenar">
+                    <span class="material-symbols-outlined text-xs" data-icon="drag_indicator">drag_indicator</span>
+                  </button>
+                  <button
+                    class="w-7 h-7 rounded-full bg-white/90 text-error flex items-center justify-center hover:bg-white"
+                    title="Eliminar">
+                    <span class="material-symbols-outlined text-xs" data-icon="delete">delete</span>
+                  </button>
+                </div>
+                <span
+                  class="absolute bottom-1 left-1 px-2 py-0.5 rounded-full bg-primary text-white text-label-sm font-label-sm font-bold">Principal</span>
+              </div>
+              <!-- Foto 2 -->
+              <div
+                class="relative group rounded-xl overflow-hidden border border-outline-variant/40 aspect-square bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  data-alt="Gentle candid shot of a happy family hands petting their loyal golden dog on green grass in a quiet botanical garden, bathed in warm sunset backlight with delicate sage green and pastel tones"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIGMMDnoxtpL4aeT7BAxssDU-lT_xIQIRyEqxz7klyTSLhyV0Y2LUzb4AULIAeeL_OHHi14AUDgnpccD8gLocaT9J8IjM8AIusbhvi5axWHbw3XdWBgNwr4kMTtldRu-aSEBSjqzZ57rjQ8mD3HlsJsBUnHKYKnXC7fUQKGlNCw2sRObVKUQ0SNKikcY9CwDvviaqU2pdgwAIaSqDvV-wzfxlcpUqIKB7Ajlvh5qY" />
+                <div
+                  class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                  <button
+                    class="w-7 h-7 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white">
+                    <span class="material-symbols-outlined text-xs" data-icon="drag_indicator">drag_indicator</span>
+                  </button>
+                  <button
+                    class="w-7 h-7 rounded-full bg-white/90 text-error flex items-center justify-center hover:bg-white">
+                    <span class="material-symbols-outlined text-xs" data-icon="delete">delete</span>
+                  </button>
+                </div>
+              </div>
+              <!-- Foto 3 -->
+              <div
+                class="relative group rounded-xl overflow-hidden border border-outline-variant/40 aspect-square bg-surface-container">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  data-alt="Artistic macro detail of an artisan ceramic handmade figurine depicting a pet sleeping curled up, resting on polished native rauli wood grain with subtle studio lighting and warm cream highlights"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuByF_TXInod1jPnDb6-t99rb-glo_uM1aQnMO5-xLzhl9sQOeuYJ0SllE9W8Eu-TR44aXEveIb_cFaLW019LPdqxJdOVfBM-KiJ22wOgLjezu5aQDw-hpL0kAbD7-T_4_GnHp68VuxMV9DzdIF5linBqIpaVGfcwpd9g9TRY6FXamMpIYEua7lbojn2Nt2gD0s5cnWxasJB2HXBPBo8JwhKa_L8VFwac_RdP8aLDg4" />
+                <div
+                  class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                  <button
+                    class="w-7 h-7 rounded-full bg-white/90 text-on-surface flex items-center justify-center hover:bg-white">
+                    <span class="material-symbols-outlined text-xs" data-icon="drag_indicator">drag_indicator</span>
+                  </button>
+                  <button
+                    class="w-7 h-7 rounded-full bg-white/90 text-error flex items-center justify-center hover:bg-white">
+                    <span class="material-symbols-outlined text-xs" data-icon="delete">delete</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de Navegación del Flujo -->
+          <div
+            class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 border-t border-surface-container-high">
+            <button
+              class="w-full sm:w-auto px-6 py-3.5 rounded-full border-2 border-secondary text-secondary hover:bg-secondary/10 transition-colors duration-200 text-label-lg font-label-lg flex items-center justify-center gap-2"
+              type="button">
+              <span class="material-symbols-outlined text-lg" data-icon="arrow_back">arrow_back</span>
+              Volver a Base
+            </button>
+            <button
+              class="w-full sm:w-auto px-8 py-3.5 rounded-full bg-primary hover:bg-primary-container text-white hover:text-on-primary-container shadow-md hover:shadow-lg transition-all duration-200 text-label-lg font-label-lg font-bold flex items-center justify-center gap-2 group active:scale-95"
+              type="submit">
+              <span>Continuar al Resumen Final</span>
+              <span class="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform"
+                data-icon="arrow_forward">arrow_forward</span>
+            </button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+  <!-- Sellos de Confianza al Pie -->
+  <section class="bg-surface-container-high py-10 mt-12 border-t border-outline-variant/30">
+    <div class="max-w-7xl mx-auto px-6 md:px-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Sello 1 -->
+        <div
+          class="flex items-center gap-4 bg-surface/80 p-5 rounded-2xl border border-outline-variant/20 custom-warm-shadow">
+          <div
+            class="w-12 h-12 rounded-full bg-primary-fixed flex items-center justify-center text-primary flex-shrink-0">
+            <span class="material-symbols-outlined text-2xl" data-icon="local_shipping">local_shipping</span>
+          </div>
+          <div>
+            <h4 class="text-title-md font-title-md font-bold text-on-surface">Envíos Protegidos</h4>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Despacho acolchado y asegurado a todo Chile con
+              seguimiento continuo.</p>
+          </div>
+        </div>
+        <!-- Sello 2 -->
+        <div
+          class="flex items-center gap-4 bg-surface/80 p-5 rounded-2xl border border-outline-variant/20 custom-warm-shadow">
+          <div
+            class="w-12 h-12 rounded-full bg-tertiary-fixed flex items-center justify-center text-tertiary flex-shrink-0">
+            <span class="material-symbols-outlined text-2xl"
+              data-icon="featured_seasonal_and_gifts">featured_seasonal_and_gifts</span>
+          </div>
+          <div>
+            <h4 class="text-title-md font-title-md font-bold text-on-surface">Empaque de Regalo</h4>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Caja de cartón kraft natural, lazo de yute y
+              tarjeta con dedicatoria artesanal.</p>
+          </div>
+        </div>
+        <!-- Sello 3 -->
+        <div
+          class="flex items-center gap-4 bg-surface/80 p-5 rounded-2xl border border-outline-variant/20 custom-warm-shadow">
+          <div
+            class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary flex-shrink-0">
+            <span class="material-symbols-outlined text-2xl" data-icon="verified">verified</span>
+          </div>
+          <div>
+            <h4 class="text-title-md font-title-md font-bold text-on-surface">Satisfacción Artesanal</h4>
+            <p class="text-body-sm font-body-sm text-on-surface-variant">Fotos previas antes del horneado definitivo
+              para tu total tranquilidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer Estándar (Shared Component) -->
+  <footer class="bg-surface-container-high">
+    <div class="w-full py-12 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-8">
+      <div
+        class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-outline-variant/40 pb-8">
+        <div>
+          <span class="text-headline-sm font-headline-sm text-secondary">Pequeños Recuerdos</span>
+          <p class="text-body-sm font-body-sm text-on-surface-variant mt-1">Esculturas que abrazan la memoria viva de
+            quienes amamos.</p>
+        </div>
+        <div class="flex flex-wrap gap-6 text-label-md font-label-md">
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Sello de
+            Autenticidad</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Guía de
+            Cuidados</a>
+          <a class="text-primary underline underline-offset-4" href="#">Configurador de Recuerdos</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Políticas de
+            Envío</a>
+          <a class="text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Contacto
+            Cálido</a>
+        </div>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row justify-between items-center gap-4 text-body-sm font-body-sm text-on-surface-variant">
+        <p>© 2024 Pequeños Recuerdos, Grandes Historias. Hecho con amor y paciencia artesanal.</p>
+        <div class="flex items-center gap-4 text-label-sm font-label-sm">
+          <span>Taller en Valle Central, Chile</span>
+          <span class="w-1 h-1 rounded-full bg-outline"></span>
+          <span>Horario: Lun a Vie 09:00 - 18:30</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

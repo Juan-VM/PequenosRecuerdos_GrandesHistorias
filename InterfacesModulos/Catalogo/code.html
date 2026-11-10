@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Catálogo Completo de Figuras | Pequeños Recuerdos, Grandes Historias</title>
+  <!-- Fonts: Quicksand & Nunito Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols Outlined -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS with Forms & Container Queries -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#7e5630",
+            "on-surface": "#1d1b16",
+            "surface-container": "#f3ede4",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#d9e8bd",
+            "tertiary-container": "#c89992",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e7e2d9",
+            "surface-tint": "#556340",
+            "surface-bright": "#fff9ef",
+            "on-background": "#1d1b16",
+            "surface-container-high": "#ede7df",
+            "surface-variant": "#e7e2d9",
+            "on-secondary-container": "#79512c",
+            "inverse-on-surface": "#f6f0e7",
+            "surface": "#fff9ef",
+            "on-primary-container": "#323f1f",
+            "background": "#fff9ef",
+            "outline": "#76786e",
+            "secondary-fixed": "#ffdcc0",
+            "error": "#ba1a1a",
+            "primary": "#556340",
+            "on-primary-fixed": "#141f04",
+            "tertiary-fixed-dim": "#edbbb4",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ffdad5",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#dfd9d1",
+            "secondary-fixed-dim": "#f1bc8e",
+            "on-tertiary-container": "#53312d",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed-variant": "#633f1b",
+            "outline-variant": "#c6c8bb",
+            "inverse-surface": "#32302a",
+            "primary-container": "#9baa82",
+            "error-container": "#ffdad6",
+            "secondary-container": "#fdc798",
+            "tertiary": "#7c554f",
+            "primary-fixed-dim": "#bdcca2",
+            "inverse-primary": "#bdcca2",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#2d1600",
+            "on-primary-fixed-variant": "#3e4b2b",
+            "on-tertiary-fixed": "#2f1310",
+            "surface-container-low": "#f9f3ea",
+            "on-surface-variant": "#45483f",
+            "on-tertiary-fixed-variant": "#613e39"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Quicksand"],
+            "label-md": ["Nunito Sans"],
+            "headline-lg": ["Quicksand"],
+            "label-lg": ["Nunito Sans"],
+            "body-lg": ["Nunito Sans"],
+            "title-md": ["Quicksand"],
+            "headline-sm": ["Quicksand"],
+            "headline-lg-mobile": ["Quicksand"],
+            "body-md": ["Nunito Sans"],
+            "display-lg": ["Quicksand"],
+            "headline-md": ["Quicksand"],
+            "label-sm": ["Nunito Sans"],
+            "body-sm": ["Nunito Sans"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["34px", { "lineHeight": "42px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body
+  class="bg-background text-on-surface antialiased min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+  <!-- 1. TopNavBar (Shared Component Execution) -->
+  <header class="w-full bg-surface-container-low shadow-sm sticky top-0 z-50 transition-colors">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between w-full">
+      <!-- Brand Logo / Product Name -->
+      <a class="flex items-center gap-3 active:scale-95 transition-transform duration-150 group" href="#">
+        <span
+          class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-surface-bright transition-colors">
+          <span class="material-symbols-outlined text-[22px]">favorite</span>
+        </span>
+        <span class="text-headline-md font-headline-md text-secondary tracking-tight">Pequeños Recuerdos</span>
+      </a>
+      <!-- Desktop Navigation Links -->
+      <nav aria-label="Navegación principal" class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
+          href="#">Inicio</a>
+        <a aria-current="page" class="text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg"
+          href="#">Catálogo</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
+          href="#">Personaliza tu figura</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
+          href="#">Nosotros</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors text-label-lg font-label-lg active:scale-95 duration-150"
+          href="#">Contacto</a>
+      </nav>
+      <!-- Trailing Action Cluster -->
+      <div class="flex items-center gap-4">
+        <a class="hidden sm:inline-flex text-on-surface-variant hover:text-primary text-label-lg font-label-lg transition-colors px-3 py-2 rounded-full active:scale-95"
+          href="#">
+          Mi Cuenta
+        </a>
+        <a class="bg-primary text-on-primary px-6 py-2.5 rounded-full text-label-lg font-label-lg shadow-sm hover:opacity-95 hover:shadow transition-all active:scale-95 duration-150"
+          href="#">
+          Crear Recuerdo
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Main Content Canvas -->
+  <main class="flex-grow max-w-7xl w-full mx-auto px-6 md:px-10 py-10 flex flex-col gap-10">
+    <!-- 2. Header de la Página -->
+    <section class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-4">
+      <div class="max-w-3xl space-y-3">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-fixed/60 text-on-primary-fixed text-label-sm font-label-sm">
+          <span class="material-symbols-outlined text-[16px]">eco</span>
+          <span>Artesanía Sensible &amp; Exclusiva</span>
+        </div>
+        <h1 class="text-display-lg font-display-lg text-on-surface text-balance">
+          Catálogo de Figuras Artesanales
+        </h1>
+        <p class="text-body-lg font-body-lg text-on-surface-variant leading-relaxed">
+          Descubre nuestras creaciones hechas a mano o úsalas como inspiración para tu recuerdo personalizado. Cada
+          figura incluye código QR interactivo de regalo.
+        </p>
+      </div>
+      <div class="flex items-center gap-2 text-label-md font-label-md text-secondary">
+        <span class="material-symbols-outlined text-[20px]">qr_code_2</span>
+        <span>QR vinculado a tu álbum digital</span>
+      </div>
+    </section>
+    <!-- 3. Barra de Búsqueda y Ordenamiento -->
+    <section
+      class="bg-surface-container-lowest p-4 md:p-5 rounded-2xl shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-4">
+      <!-- Barra de Búsqueda -->
+      <div class="relative w-full md:w-1/2">
+        <span
+          class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline text-[22px]">search</span>
+        <input
+          class="w-full bg-surface-container-low pl-12 pr-4 py-3 rounded-full border border-outline-variant/40 text-on-surface placeholder:text-outline text-body-md font-body-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
+          placeholder="Buscar por motivo, animalito, ocasión o material..." type="text" />
+      </div>
+    </section>
+    <!-- 4 & 5. Layout Principal: Filtros y Cuadrícula de Figuras -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <!-- Cuadrícula de Figuras (9 columnas en lg) -->
+      <section class="lg:col-span-9 space-y-8">
+        <!-- Grid de Productos (4 cols desktop, adaptable) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+          <!-- Tarjeta 1: Perrito Guardián en Jardín -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A delicate handcrafted miniature figurine of a golden retriever dog resting serenely in a miniature mossy garden on a polished wooden base. Captured in natural, soft workshop sunlight, showing subtle clay textures, gentle earth tones, sage greens, and warm browns. The atmosphere is tender and nostalgic, shot in an elegant minimalist aesthetic."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvKV0_Cyj-6BJoazBUsbrVMSjolwpJfUaY-_MwFeL2ZdE4bjWbqr2KUeG_y0kOdK9PCEIUc6XmnoxxIO6BeUMKtYULyUgFEZFcQk1iCB6esX2tzzXJcSOzZFLkytXMtd_k1xMxgq3gck7q8XX3z01SDFJ-tVhBf6PDZOI4oLulwE_Kwm6XJ1COxotJUg64ZD-0vBEo7y-EFQ-PeSxYxfhblNnvEQpVioVlN_uh6BU" />
+                <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Mascotas</span>
+                  <span>4 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Miniatura Perrito Guardián en Jardín
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Base de madera grabada con nombre y fecha, detalles modelados a mano en porcelana fría y arcilla
+                  satinada.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$34.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$38 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 2: Dúo Amor Eterno con Farol -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="An artisanal miniature sculpture of a couple holding hands beneath a tiny warm streetlamp, handcrafted from white ceramic clay and soft dusty rose accents. The scene is illuminated by gentle diffuse daylight with delicate shadow play on textured stone base, invoking romance, warmth, and lifelong commitment in organic minimal tones."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuynCrtaeHucqZwPhsEqC3H5QQsHdUP1Btw_V9KkXyeI-MfINi0iXdxFHWUWLFLAXzS3oWP2p0Y7q0fQejnA9aRYOuBdDuusjsrHupHQrHgq6L3uRcmOzzLzOu6J3_Am6YhHyZyv-7QyKcN7qt81iAEaSmWsydGSlQywTA8yGeVgrEsqCZMJmaP3GW1nHgUJK2EqNouNOc_Q_wTQSKL4G04JEdPANHtMouznDkWUk" />
+                <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Parejas &amp; Bodas</span>
+                  <span>6 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Dúo Amor Eterno con Farol
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Arcilla blanca horneada y detalles en rosa empolvado, con micro-farol decorativo y dedicatoria
+                  personalizada.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$46.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$52 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 3: Búho Graduado con Birrete y Pergamino -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="An adorable handmade clay owl wearing a tiny graduation cap with tassel and holding a rolled parchment scroll on a pine wooden block. Shot in a warm, light-filled artist studio, surrounded by sage green foliage and craft tools, capturing delicate textures and soft warm hues."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjeSw9CZXhPnEtnvhmHAk3p3GbhgEADojB4yrDIpCerOPX0iBaNhkRf5j2U6klH60kFOH3dLbT5nJiWFx-EvhiOvvBH-iDY2-lCRMruv3iis97g9JirI8mHWtUvk65xIqqoF1QfeHPS6kb4amGDD_sp1nmuU_p49tPxjiYw1s518u0I3EczCupsBTrKE_RC8w6FuphQ--u9jQnRDRwS7-SCFVLnFyDqMSZy42fWWc" />
+                <div class="absolute top-3 left-3">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Graduaciones</span>
+                  <span>3 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Búho Graduado con Birrete y Pergamino
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Base de madera y foamy artesanal con fecha de titulación y QR a videos de la ceremonia y fotos
+                  familiares.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$36.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$40 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 4: Cuna Botánica con Inicial Bordada -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A tender miniature baby crib sculpture crafted from seed-embedded recycled cardboard and delicate terracotta clay, adorned with miniature dried botanicals and a tiny initial. Soft morning sunlight highlights earthy textures, cream paper grains, and natural sage leaves with organic calm charm."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKiQ4FrtMBZW80u0piN99dC2UQAMwTMbryhl0b79-LKb6KcKIqJ467zbHVVQ7_o_bI8-XbAqZOCZVcR11bcoq7Sodb3K9RB0VrdKwSMCNMR5pXaMgtA5mt75xnx4NODMEiVEqTVy1cvuHvNoSg6YFlBNoeLGa163BwDtx2x9Edni25F3CJfE0DU6qcn-EtX29avdQRo2svqKL566xfWAw_pyBiIN2Ei2yLL5hiCUg" />
+                <div class="absolute top-3 left-3">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Nacimientos &amp; Bebés</span>
+                  <span>5 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Cuna Botánica con Inicial Bordada
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Cartón reciclado plantable con semillas silvestres y arcilla, ideal para dar la bienvenida a un recién
+                  nacido.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$42.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$48 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 5: Gatito Curioso en Ovillo de Lana -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="A charming clay cat figurine curiously playing with a miniature textured yarn ball, modeled with smooth satin finish and realistic feline expressions. Set on a warm cream surface with soft ambient shadows, exhibiting earth tones, muted terracotta, and sage accents in a comforting artisan tone."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiLDBEZowRp_W2nOHsTjZ9-kDIiKqnpCnuJWO-oiLIl-aQayEFRnrCBJnhSZk1UevOalJTS77ldlflPP5OeBAv4QKpfwvrtR8ly7gYmRHeosIXJxLV3-GJJXUmsTGtHtuCSRhwyZkYI-H6YE_SiQf8rlCaP5ZhWpK7l0PLcf11kucNeZINcFjS_TXzlpy7ufBa9i3OM3dzSOs-mjuKiYSfsIJBmLLhalNyjZIsDG0" />
+                <div class="absolute top-3 left-3">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Mascotas</span>
+                  <span>4 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Gatito Curioso en Ovillo de Lana
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Arcilla horneada satinada con pigmentos minerales, modelado según el patrón de manchas de tu propio
+                  compañero.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$33.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$37 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 6: Letras Iniciales Florales Entrelazadas -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Handcrafted intertwined monogram letters sculpted from pine wood and soft modeling clay paste, surrounded by micro sculpted wildflowers and delicate leaves. Elegant warm studio lighting emphasizes natural wood grain and pastel floral details in an artisanal, peaceful atmosphere."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhiCvoOdOk7wtPqGv9_TxKS72-nH8wOE8p7zvDWb5omqkBg4Y5Kh47gz4SyXDkakY-0tdSmHaKU34bwoE6R3nrCfmaD_zhere7OTgkKRcuOvAaFOWawWg8W9oBEp-mIpn4WLOE0BCTYe8x5BGowgL8ub0g6uacjpF39ajO5WH3nkn5wh01SbrdZALpRhhv_474TseIl4gsFdLoQx18vCIK8l0mjMX2-U-wB4aPwKw" />
+                <div class="absolute top-3 left-3">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Iniciales &amp; Nombres</span>
+                  <span>2 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Letras Iniciales Florales Entrelazadas
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Madera de pino recuperada y pasta moldeable con acabado mate sedoso, perfecta para escritorios o
+                  repisas.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$29.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$32 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 7: Colibrí Silvestre sobre Rama de Olivo -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="An ethereal miniature hummingbird figurine sculpted from polymer clay and subtle copper wire accents, perched gently upon an olive twig. High-key diffused soft warm lighting reveals gentle feather texturing, olive leaves, and an earthy color scheme celebrating nature and peaceful memories."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXSlhamQxn3EeDukpqPa0UAYbbgHjNbZ8QZ0Ps4kHu0ShAUpNlVT0lSmXCRNwMMYqR1e6Oz71QLzIcN3hNS1a6ad_Fkenk-NXcccnfnlGeTxEoICTQl_DjdGK2WSdWnhwC4-3JUR4dqaQWqzU5Pk6yHLE2pOMZuUoIAxsFbmhCTYhQfBayAYJ3jG7Nnq2pJjQoJQHp_D-UCSJuqx-zhjWnJwXlQmLb2vnSzeoyI38" />
+                <div class="absolute top-3 left-3">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Animales</span>
+                  <span>5 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Colibrí Silvestre sobre Rama de Olivo
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Arcilla polimérica y cobre sutil que evoca ligereza, libertad y la presencia espiritual de quienes
+                  amamos.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$39.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$44 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+          <!-- Tarjeta 8: Abuelitos en su Banca del Recuerdo -->
+          <article
+            class="bg-surface-container-lowest rounded-3xl p-4 border border-outline-variant/30 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)] hover:shadow-[0_12px_32px_-4px_rgba(68,60,52,0.10)] transition-all duration-300 flex flex-col justify-between group">
+            <div>
+              <div class="relative w-full h-56 rounded-2xl overflow-hidden bg-surface-container-low mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="An emotionally moving handcrafted miniature sculpture depicting two loving elderly grandparents sitting together on a tiny rustic wooden bench. Diffused warm golden-hour light casts a gentle glow over ceramic clay figures, displaying knit sweaters, wrinkled smiles, and rich emotional storytelling in warm neutral tones."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6KOzy0qOS8nUozDe7EFFV7IHx3EzQ70pdk7CFFAq2vxiH6boGGw9NevwkKkqDO3y9AD4jHOQfoFsnTYknqdwAg4K0earYEHFl-Av5WZJAE_jBMRj7oAZznVLf93zB4Iu3YNUQxiR9YC3nqRDIIqMZ9N_32cG8oDmwjBr6CyJHrUN3JLJgMIA9y7vvDPqMvqNnh7Z2wzN5OCvDM6mzDYBi9LU56h2709sSfW3iHJ4" />
+                <div class="absolute top-3 left-3 flex flex-col gap-1.5">
+                  <span
+                    class="bg-surface-bright/90 backdrop-blur-sm text-primary px-2.5 py-0.5 rounded-full text-label-sm font-label-sm flex items-center gap-1 border border-primary/20">
+                    <span class="material-symbols-outlined text-[14px]">qr_code_2</span> Incluye QR
+                  </span>
+                </div>
+              </div>
+              <div class="px-1 space-y-2">
+                <div class="flex items-center justify-between text-label-sm font-label-sm text-outline">
+                  <span>Diseños Especiales</span>
+                  <span>7 días de elaboración</span>
+                </div>
+                <h3
+                  class="text-title-md font-title-md text-on-surface leading-snug group-hover:text-primary transition-colors">
+                  Abuelitos en su Banca del Recuerdo
+                </h3>
+                <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2">
+                  Modelado ultra personalizado basado en fotografías reales, celebrando vidas compartidas y legados
+                  familiares.
+                </p>
+              </div>
+            </div>
+            <div class="pt-4 px-1 mt-4 border-t border-outline-variant/20 flex flex-col gap-3">
+              <div class="flex items-baseline justify-between">
+                <div>
+                  <span class="text-headline-sm font-headline-sm text-secondary font-bold">$52.000</span>
+                  <span class="text-label-sm font-label-sm text-outline"> CLP</span>
+                </div>
+                <span class="text-label-md font-label-md text-on-surface-variant">$59 USD</span>
+              </div>
+              <div class="grid grid-cols-2 gap-2">
+                <button
+                  class="py-2.5 px-3 rounded-full border border-secondary text-secondary hover:bg-secondary-fixed/30 text-label-sm font-label-sm text-center transition-colors active:scale-95">
+                  Ver detalles
+                </button>
+                <button
+                  class="py-2.5 px-3 rounded-full bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary text-label-sm font-label-sm font-bold text-center transition-colors active:scale-95 shadow-sm">
+                  Personalizar
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <!-- Paginación Elegante -->
+        <nav aria-label="Paginación de catálogo"
+          class="flex items-center justify-between pt-6 border-t border-outline-variant/20">
+          <button
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-outline-variant text-on-surface-variant hover:text-primary hover:border-primary transition-colors text-label-md font-label-md active:scale-95">
+            <span class="material-symbols-outlined text-[18px]">arrow_back</span>
+            <span>Anterior</span>
+          </button>
+          <div class="flex items-center gap-1.5">
+            <button
+              class="w-10 h-10 rounded-full bg-primary text-on-primary font-bold text-label-md font-label-md shadow-sm">1</button>
+            <button
+              class="w-10 h-10 rounded-full text-on-surface hover:bg-surface-container-high transition-colors text-label-md font-label-md">2</button>
+            <button
+              class="w-10 h-10 rounded-full text-on-surface hover:bg-surface-container-high transition-colors text-label-md font-label-md">3</button>
+            <span class="px-2 text-outline">...</span>
+            <button
+              class="w-10 h-10 rounded-full text-on-surface hover:bg-surface-container-high transition-colors text-label-md font-label-md">6</button>
+          </div>
+          <button
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-outline-variant text-on-surface-variant hover:text-primary hover:border-primary transition-colors text-label-md font-label-md active:scale-95">
+            <span>Siguiente</span>
+            <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+          </button>
+        </nav>
+      </section>
+    </div>
+    <!-- 6. Banner de Llamado a la Acción (Custom Workshop Callout) -->
+    <section
+      class="my-6 rounded-3xl bg-surface-container-high p-8 md:p-12 relative overflow-hidden border border-outline-variant/30 flex flex-col md:flex-row items-center justify-between gap-8 shadow-[0_4px_20px_-2px_rgba(68,60,52,0.06)]">
+      <div class="relative z-10 max-w-2xl space-y-3">
+        <span class="text-label-sm font-label-sm tracking-wider uppercase text-secondary font-bold">Creación a
+          Medida</span>
+        <h2 class="text-headline-lg font-headline-lg text-on-surface text-balance">
+          ¿Tienes una idea única que no está en el catálogo?
+        </h2>
+        <p class="text-body-md font-body-md text-on-surface-variant">
+          Cuéntanosla y la creamos desde cero. Nuestro taller artesanal modela mascotas, seres queridos, anécdotas o
+          rincones especiales con todo el amor y paciencia que merecen.
+        </p>
+      </div>
+      <div class="relative z-10 flex flex-col sm:flex-row items-center gap-4 shrink-0">
+        <a class="px-8 py-3.5 rounded-full bg-primary text-on-primary text-label-lg font-label-lg hover:opacity-95 shadow transition-all active:scale-95"
+          href="#">
+          Cotizar mi Proyecto
+        </a>
+        <a class="px-6 py-3.5 rounded-full border border-secondary text-secondary hover:bg-surface-container-highest transition-colors text-label-lg font-label-lg active:scale-95"
+          href="#">
+          Ver Galería de Encargos
+        </a>
+      </div>
+      <!-- Acento decorativo sutil en background -->
+      <div
+        class="absolute -right-12 -bottom-12 w-64 h-64 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none">
+      </div>
+    </section>
+  </main>
+  <!-- 7. Footer (Shared Component Execution) -->
+  <footer class="bg-surface-container-high w-full mt-12 border-t-0">
+    <div class="w-full py-12 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-8">
+
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-4 text-body-sm font-body-sm text-on-surface-variant">
+        <p>© 2024 Pequeños Recuerdos, Grandes Historias. Hecho con amor y paciencia artesanal.</p>
+        <div class="flex items-center gap-6 text-label-sm font-label-sm">
+          <span>Taller ubicado en Santiago, envíos a todo Chile y el mundo</span>
+          <div class="flex items-center gap-2 text-primary">
+            <span class="material-symbols-outlined text-[18px]">verified</span>
+            <span>Piezas 100% Hechas a Mano</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

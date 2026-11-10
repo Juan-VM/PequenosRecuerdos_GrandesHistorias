@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Pequeños Recuerdos - Figuras Artesanales con Historias</title>
+  <!-- Material Symbols Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Quicksand & Nunito Sans Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS v3 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#7e5630",
+            "on-surface": "#1d1b16",
+            "surface-container": "#f3ede4",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#d9e8bd",
+            "tertiary-container": "#c89992",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e7e2d9",
+            "surface-tint": "#556340",
+            "surface-bright": "#fff9ef",
+            "on-background": "#1d1b16",
+            "surface-container-high": "#ede7df",
+            "surface-variant": "#e7e2d9",
+            "on-secondary-container": "#79512c",
+            "inverse-on-surface": "#f6f0e7",
+            "surface": "#fff9ef",
+            "on-primary-container": "#323f1f",
+            "background": "#fff9ef",
+            "outline": "#76786e",
+            "secondary-fixed": "#ffdcc0",
+            "error": "#ba1a1a",
+            "primary": "#556340",
+            "on-primary-fixed": "#141f04",
+            "tertiary-fixed-dim": "#edbbb4",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ffdad5",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#dfd9d1",
+            "secondary-fixed-dim": "#f1bc8e",
+            "on-tertiary-container": "#53312d",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed-variant": "#633f1b",
+            "outline-variant": "#c6c8bb",
+            "inverse-surface": "#32302a",
+            "primary-container": "#9baa82",
+            "error-container": "#ffdad6",
+            "secondary-container": "#fdc798",
+            "tertiary": "#7c554f",
+            "primary-fixed-dim": "#bdcca2",
+            "inverse-primary": "#bdcca2",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#2d1600",
+            "on-primary-fixed-variant": "#3e4b2b",
+            "on-tertiary-fixed": "#2f1310",
+            "surface-container-low": "#f9f3ea",
+            "on-surface-variant": "#45483f",
+            "on-tertiary-fixed-variant": "#613e39"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Quicksand"],
+            "label-md": ["Nunito Sans"],
+            "headline-lg": ["Quicksand"],
+            "label-lg": ["Nunito Sans"],
+            "body-lg": ["Nunito Sans"],
+            "title-md": ["Quicksand"],
+            "headline-sm": ["Quicksand"],
+            "headline-lg-mobile": ["Quicksand"],
+            "body-md": ["Nunito Sans"],
+            "display-lg": ["Quicksand"],
+            "headline-md": ["Quicksand"],
+            "label-sm": ["Nunito Sans"],
+            "body-sm": ["Nunito Sans"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["34px", { "lineHeight": "42px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .shadow-warm-sm {
+      box-shadow: 0 4px 20px -2px rgba(68, 60, 52, 0.06);
+    }
+
+    .shadow-warm-md {
+      box-shadow: 0 12px 32px -4px rgba(68, 60, 52, 0.10);
+    }
+
+    .shadow-warm-lg {
+      box-shadow: 0 24px 48px -8px rgba(68, 60, 52, 0.16);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-background text-on-surface antialiased selection:bg-primary-fixed selection:text-on-primary-fixed min-h-screen flex flex-col">
+  <!-- TopNavBar (Shared Component) -->
+  <header
+    class="bg-surface dark:bg-surface bg-surface-container-low dark:bg-surface-container-low shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 h-20 flex items-center justify-between w-full">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-2.5 group" href="#">
+        <span
+          class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary group-hover:scale-105 transition-transform duration-200">
+          <span class="material-symbols-outlined text-headline-sm" data-icon="spa">spa</span>
+        </span>
+        <span class="text-headline-md font-headline-md text-secondary dark:text-secondary-fixed tracking-tight">
+          Pequeños Recuerdos
+        </span>
+      </a>
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8">
+        <!-- Inicio: Active item determined by page context -->
+        <a class="text-primary dark:text-primary font-bold border-b-2 border-primary pb-1 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
+          href="#inicio">
+          Inicio
+        </a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
+          href="#catalogo">
+          Catálogo
+        </a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
+          href="#personaliza">
+          Personaliza tu figura
+        </a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
+          href="#nosotros">
+          Nosotros
+        </a>
+        <a class="text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-primary transition-colors duration-200 text-label-lg font-label-lg active:scale-95 transition-transform duration-150"
+          href="#contacto">
+          Contacto
+        </a>
+      </nav>
+      <!-- Trailing Action Cluster -->
+      <div class="flex items-center gap-4">
+        <!-- Mi Cuenta (Secondary Action) -->
+        <a class="hidden sm:inline-flex items-center text-label-lg font-label-lg text-secondary hover:text-primary font-semibold transition-colors duration-200 px-3 py-2 rounded-full hover:bg-surface-container active:scale-95"
+          href="#cuenta">
+          Mi Cuenta
+        </a>
+        <!-- Crear Recuerdo (Primary Action) -->
+        <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-6 py-2.5 rounded-full text-label-lg font-label-lg font-semibold hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-warm-sm active:scale-95"
+          href="#personaliza">
+          <span class="material-symbols-outlined text-title-md" data-icon="magic_button">magic_button</span>
+          <span>Crear Recuerdo</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <main class="flex-grow">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 md:pt-16 md:pb-28" id="inicio">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <!-- Left Column Content -->
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <!-- Pill Tag -->
+            <div
+              class="inline-flex items-center gap-2 self-start px-4 py-1.5 rounded-full bg-surface-container text-secondary text-label-sm font-label-sm uppercase tracking-wider border border-secondary/10">
+              <span class="material-symbols-outlined text-[16px]" data-icon="favorite">favorite</span>
+              <span>Artesanía Emocional y Digital</span>
+            </div>
+            <!-- Headline -->
+            <h1 class="text-display-lg font-display-lg text-on-surface text-balance">
+              Pequeños Recuerdos, <br class="hidden sm:inline" />
+              <span class="text-primary italic">Grandes Historias</span>
+            </h1>
+            <!-- Subtitle -->
+            <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl text-pretty">
+              Creamos figuras personalizadas que guardan momentos especiales. Cada pieza artesanal incluye un código QR
+              único que conecta el objeto físico con tus dedicatorias, fotografías y memorias más queridas.
+            </p>
+            <!-- CTA Cluster -->
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <a class="inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-primary hover:text-on-primary transition-all duration-200 shadow-warm-sm hover:shadow-warm-md active:scale-95"
+                href="#catalogo">
+                <span>Explorar Catálogo</span>
+                <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+              </a>
+              <a class="inline-flex items-center gap-2 border-2 border-secondary text-secondary bg-surface/50 px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-secondary-fixed hover:border-secondary transition-all duration-200 active:scale-95"
+                href="#personaliza">
+                <span class="material-symbols-outlined" data-icon="palette">palette</span>
+                <span>Crear mi figura</span>
+              </a>
+            </div>
+            <!-- Value Props Badges -->
+            <div class="pt-6 grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-outline-variant/30">
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-fixed/60 flex items-center justify-center text-primary flex-shrink-0">
+                  <span class="material-symbols-outlined text-headline-sm" data-icon="pan_tool_alt">pan_tool_alt</span>
+                </div>
+                <span class="text-body-sm font-body-sm font-medium text-on-surface">100% Hecho a mano con amor</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-secondary-fixed/60 flex items-center justify-center text-secondary flex-shrink-0">
+                  <span class="material-symbols-outlined text-headline-sm" data-icon="qr_code_2">qr_code_2</span>
+                </div>
+                <span class="text-body-sm font-body-sm font-medium text-on-surface">Código QR perpetuo e
+                  interactivo</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <div
+                  class="w-10 h-10 rounded-full bg-primary-fixed/60 flex items-center justify-center text-primary flex-shrink-0">
+                  <span class="material-symbols-outlined text-headline-sm" data-icon="eco">eco</span>
+                </div>
+                <span class="text-body-sm font-body-sm font-medium text-on-surface">Materiales ecológicos y
+                  sostenibles</span>
+              </div>
+            </div>
+          </div>
+          <!-- Right Column Hero Visual Card -->
+          <div class="lg:col-span-5 relative">
+            <div
+              class="relative mx-auto max-w-md lg:max-w-none bg-surface-container-lowest rounded-3xl p-5 shadow-warm-lg border border-primary-container/20">
+              <div class="relative overflow-hidden rounded-2xl aspect-[4/5] bg-surface-container">
+                <img
+                  class="w-full h-full object-cover rounded-2xl transform hover:scale-105 transition-transform duration-700 ease-out"
+                  data-alt="Handcrafted ceramic and polymer clay miniature figurines depicting a loving couple and a golden retriever dog placed on an organic polished oak wood block. In the foreground, a modern mobile phone scans a subtle laser-engraved circular QR code on the timber base. The scene is softly illuminated by natural golden workshop daylight, highlighting earthy sage green, terracotta, and cream tones."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEUIM3XsjzIgn8JG9h3jT7cjAlYTl-j9OAq963nKXPYo54HUxr7x_6aWNFGoMYQgKQfeOL5IlEVvQTEjQ_7GVC7ycThbJcfhKIN_0hzWI6-1TYUS5mCDk_LGOyML2o_YGjzo-19ukp39r3u1Ojv4mt3kvUyBtDZ69vVDLDk82bRAO1pv4DEuJMOdhTbDHGvu86pa7yHNQ15D1bMowOGG9u3sVu36yCYOWedz3H0Rk" />
+                <!-- Floating Memory Overlay Pill -->
+                <div
+                  class="absolute bottom-4 left-4 right-4 bg-surface-bright/95 backdrop-blur-md p-4 rounded-2xl border border-secondary/10 shadow-warm-md flex items-center gap-3.5">
+                  <div
+                    class="w-12 h-12 rounded-xl bg-tertiary-container/30 flex items-center justify-center text-tertiary flex-shrink-0">
+                    <span class="material-symbols-outlined text-headline-md"
+                      data-icon="photo_camera_front">photo_camera_front</span>
+                  </div>
+                  <div class="flex flex-col">
+                    <span class="text-label-sm font-label-sm text-secondary font-bold uppercase tracking-wider">Recuerdo
+                      Activo</span>
+                    <span class="text-body-sm font-body-sm font-semibold text-on-surface">"Nuestro viaje a los lagos -
+                      2023"</span>
+                    <span class="text-label-sm font-label-sm text-on-surface-variant">Escaneado desde la base de la
+                      figura</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Organic Accent Badge -->
+              <div
+                class="absolute -top-4 -right-4 bg-secondary text-surface px-4 py-2 rounded-full shadow-warm-md text-label-md font-label-md font-bold flex items-center gap-1.5 rotate-3">
+                <span class="material-symbols-outlined text-label-lg" data-icon="auto_awesome">auto_awesome</span>
+                <span>Edición Única</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Interactive Section: 'La Magia detrás del Código QR' (¿Cómo funciona?) -->
+    <section class="py-20 bg-surface-container-low relative">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-label-md font-label-md text-secondary uppercase tracking-widest font-bold">Proceso Artesanal
+            &amp; Digital</span>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface mt-2">La Magia detrás del Código QR</h2>
+          <p class="text-body-md font-body-md text-on-surface-variant mt-3">
+            Un puente sensible entre lo que puedes tocar con tus manos y las memorias que conservas en el corazón.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+          <!-- Step 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col items-start">
+            <div
+              class="w-14 h-14 rounded-2xl bg-secondary-fixed/50 text-secondary flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-headline-md" data-icon="tune">tune</span>
+            </div>
+            <span class="text-label-md font-label-md font-bold text-primary mb-1">Paso 01</span>
+            <h3 class="text-title-md font-title-md text-on-surface mb-3">Configuras tu figura</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Eliges el diseño, materiales orgánicos y redactas una dedicatoria especial acompañada de tus fotos
+              favoritas o canciones emblemáticas.
+            </p>
+            <div
+              class="mt-auto w-full pt-4 border-t border-surface-container flex items-center gap-2 text-label-sm font-label-sm text-secondary">
+              <span class="material-symbols-outlined text-[16px]" data-icon="cloud_upload">cloud_upload</span>
+              <span>Subida de fotos y audios protegidos</span>
+            </div>
+          </div>
+          <!-- Step 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col items-start relative overflow-hidden">
+            <div class="w-14 h-14 rounded-2xl bg-primary-fixed/60 text-primary flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-headline-md" data-icon="brush">brush</span>
+            </div>
+            <span class="text-label-md font-label-md font-bold text-primary mb-1">Paso 02</span>
+            <h3 class="text-title-md font-title-md text-on-surface mb-3">Esculpimos tu recuerdo</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Nuestros artesanos moldean cada detalle con amor y precisión, grabando un código QR exclusivo y discreto
+              en la base de madera natural.
+            </p>
+            <div
+              class="mt-auto w-full pt-4 border-t border-surface-container flex items-center gap-2 text-label-sm font-label-sm text-primary">
+              <span class="material-symbols-outlined text-[16px]" data-icon="qr_code">qr_code</span>
+              <span>Grabado láser de alta durabilidad</span>
+            </div>
+          </div>
+          <!-- Step 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col items-start">
+            <div class="w-14 h-14 rounded-2xl bg-tertiary-fixed/60 text-tertiary flex items-center justify-center mb-6">
+              <span class="material-symbols-outlined text-headline-md"
+                data-icon="sentiment_very_satisfied">sentiment_very_satisfied</span>
+            </div>
+            <span class="text-label-md font-label-md font-bold text-primary mb-1">Paso 03</span>
+            <h3 class="text-title-md font-title-md text-on-surface mb-3">Sorpresa que emociona</h3>
+            <p class="text-body-sm font-body-sm text-on-surface-variant leading-relaxed mb-6">
+              Quien recibe el regalo escanea el QR con cualquier teléfono y revive una experiencia multimedia con tu
+              carta, galería interactiva y fecha especial.
+            </p>
+            <div
+              class="mt-auto w-full pt-4 border-t border-surface-container flex items-center gap-2 text-label-sm font-label-sm text-tertiary">
+              <span class="material-symbols-outlined text-[16px]" data-icon="loyalty">loyalty</span>
+              <span>Sin necesidad de instalar apps</span>
+            </div>
+          </div>
+        </div>
+        <!-- Simulation Banner of phone scanning -->
+        <div
+          class="mt-14 bg-surface-bright rounded-3xl p-8 md:p-12 border border-secondary/15 shadow-warm-sm flex flex-col lg:flex-row items-center justify-between gap-8">
+          <div class="max-w-xl">
+            <div
+              class="inline-flex items-center gap-2 text-label-sm font-label-sm font-bold text-primary bg-primary-fixed/40 px-3 py-1 rounded-full mb-3">
+              <span class="material-symbols-outlined text-[16px]" data-icon="lock_open">lock_open</span>
+              <span>Acceso Perpetuo y Privado</span>
+            </div>
+            <h3 class="text-headline-sm font-headline-sm text-on-surface">Un portal digital para toda la vida</h3>
+            <p class="text-body-md font-body-md text-on-surface-variant mt-2">
+              El visor de recuerdos no expira. Podrás actualizar fotos o añadir nuevos aniversarios en el futuro,
+              manteniendo la figura como un testigo vivo de tu historia.
+            </p>
+          </div>
+          <div class="flex items-center gap-4 bg-surface-container p-4 rounded-2xl">
+            <div
+              class="w-20 h-20 bg-surface-container-lowest p-2 rounded-xl border border-secondary/20 flex items-center justify-center">
+              <!-- Rounded Stylized QR -->
+              <span class="material-symbols-outlined text-[64px] text-on-surface" data-icon="qr_code_2">qr_code_2</span>
+            </div>
+            <div class="text-left">
+              <p class="text-label-md font-label-md font-bold text-on-surface">Escanea la muestra de prueba</p>
+              <p class="text-body-sm font-body-sm text-on-surface-variant">Prueba cómo tus seres queridos verán su
+                dedicatoria.</p>
+              <button
+                class="mt-2 text-label-sm font-label-sm text-primary font-bold hover:underline inline-flex items-center gap-1">
+                <span>Ver demostración en vivo</span>
+                <span class="material-symbols-outlined text-[14px]" data-icon="open_in_new">open_in_new</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería de Productos Destacados -->
+    <section class="py-20 bg-surface-container-low border-t border-outline-variant/20">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-label-md font-label-md text-secondary uppercase tracking-widest font-bold">Piezas
+            Favoritas</span>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface mt-2">Productos Destacados</h2>
+          <p class="text-body-md font-body-md text-on-surface-variant mt-3">
+            Cada creación es irrepetible y moldeada pieza a pieza por nuestros maestros artesanos.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Product Card 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-4 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col justify-between group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden bg-surface-container mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Handcrafted sculpture of a couple holding their pet cat, fashioned from baked terracotta clay and resting on a smooth circular oak base. A delicate QR code emblem is neatly embedded in the wood. High-key natural lighting, soft sage greens, almond tones, and organic tactile textures."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxx2xKVCT8az85eYJx3u5oftypEWugM8mz9vbTOP0vp-n80OTP3nk-_YexPyhdGyg4WfLN1i1pYUR8b2EUXFm-tojJXvvTtx_Y3LjHxnhgQsU0tS-Axp1rfk-fztQxo09LricE-YQYiUdxqo4b2br0BJth8ftnoRendJFobKyKIFFIHloS0MbHIhxJdBTvORxRb0b2idiwCs11-X1v-Db1znDqnxYA1R-XTwCLPaI" />
+                <span
+                  class="absolute top-2.5 right-2.5 bg-surface-bright/95 text-primary text-label-sm font-label-sm font-bold px-2.5 py-1 rounded-full border border-primary/20 flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[14px]" data-icon="qr_code_2">qr_code_2</span>
+                  <span>QR Incluido</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span
+                  class="text-label-sm font-label-sm bg-primary-fixed/50 text-on-primary-fixed px-2 py-0.5 rounded-full font-semibold">Horneado
+                  &amp; Barnizado</span>
+              </div>
+              <h3 class="text-title-md font-title-md text-on-surface font-semibold">Dúo con Mascota Familiar</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2 mt-1">Figura triple con rasgos y
+                colores personalizados a partir de tus fotos.</p>
+            </div>
+          </div>
+          <!-- Product Card 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-4 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col justify-between group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden bg-surface-container mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Handcrafted ceramic replica of a golden retriever dog with realistic joyful expression, posed on a carved natural olive wood plinth. Beautiful warm studio illumination with gentle highlights on the fur, accompanied by a small wooden heart token with a QR code. Sage green and warm brown harmony."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCdUzIaYY7uYPFmw7e0uC7YPTF6_KseK8YzxK9mHvo5rSDqmJvI4LpfMOThlBwl4t2j22YEZbpH6RY7UvT3_ToQcoaujJjMISXfNMy71q4g73zit5BdWQ131w8MGcJ1R6eVvGsegBF9sFT77piD9kpTceta939NYuWD8j5kuGZjNHA2u4kLKpMvlrklPLu0odYvDou5xeqhq3lPn_X4YLIhzhcZwEHYBj7HaDx2Fw" />
+                <span
+                  class="absolute top-2.5 right-2.5 bg-surface-bright/95 text-primary text-label-sm font-label-sm font-bold px-2.5 py-1 rounded-full border border-primary/20 flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[14px]" data-icon="qr_code_2">qr_code_2</span>
+                  <span>QR Incluido</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span
+                  class="text-label-sm font-label-sm bg-tertiary-container/30 text-tertiary px-2 py-0.5 rounded-full font-semibold">Tributo
+                  Emocional</span>
+              </div>
+              <h3 class="text-title-md font-title-md text-on-surface font-semibold">Retrato de Perrito Esculpido</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2 mt-1">Con detalles exactos de
+                pelaje, manchitas y collar grabado.</p>
+            </div>
+          </div>
+          <!-- Product Card 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-4 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col justify-between group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden bg-surface-container mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Artisanal clay couple in wedding attire standing under an arch of dried wildflowers on a circular solid walnut wood base. A gentle phone scan simulation shows soft glow on the base. Elegant light-mode studio ambiance with soft sage green backgrounds and warm biscuit tones."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVgd7po3EkaGSBMEzHQIo-lyeCsLs6ddct1TlhIUPlXX9zTyOPrNj6pg-ZHaoAceMqGe2tZLLSewsEjEhuq4J1_3lmXjwqjaRqYegHhqOmh5Srk9iv7u6GZ0VXT5ovJSnlExCMDo9NXI7EX4vWFxrr8Clvf2SOXq1jPGbP_yTbM1fSSJ7cfHlQezoR37Xv5TLiiFLC5kT-80r-6f5miwe_olqxnqqGwqn8b1sICDE" />
+                <span
+                  class="absolute top-2.5 right-2.5 bg-surface-bright/95 text-primary text-label-sm font-label-sm font-bold px-2.5 py-1 rounded-full border border-primary/20 flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[14px]" data-icon="qr_code_2">qr_code_2</span>
+                  <span>QR Incluido</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span
+                  class="text-label-sm font-label-sm bg-secondary-fixed/50 text-secondary px-2 py-0.5 rounded-full font-semibold">Edición
+                  Boda</span>
+              </div>
+              <h3 class="text-title-md font-title-md text-on-surface font-semibold">Pareja con Arco Botánico</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2 mt-1">Incluye réplica del ramo de
+                novia y álbum virtual con fotos de la fiesta.</p>
+            </div>
+          </div>
+          <!-- Product Card 4 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-4 shadow-warm-sm hover:shadow-warm-md transition-all duration-300 border border-outline-variant/30 flex flex-col justify-between group">
+            <div>
+              <div class="relative aspect-square rounded-2xl overflow-hidden bg-surface-container mb-4">
+                <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  data-alt="Handcrafted circular wooden heirloom plaque with miniature clay figures of a grandmother and granddaughter reading a book together. The wooden rim displays warm pyrography patterns and a subtle polished QR medallion. Gentle, affectionate atmosphere with soft natural light, sage green accents, and warm linen cloth textures."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5QlxMffsLVdnUYB8ABHjHo8sE50iE0Qmdf7NRPyo3bnCx2i9_qGj5o84BusADyjjlwdJHC9t68kkzMBL1nebaPgwx_ZTxLlaquI1KbEGJRIHS0L8ghjtqCwMtqmDvzN3OEEbzchlkr3QJ92je1Jl_eHcX4C29znuwLjwmMCs5MlZxuDIZm3n5Qry4HXp-aqnmAWInWOiv_W74oDXN6uLQiSS9puMqELM6n1K7nuI" />
+                <span
+                  class="absolute top-2.5 right-2.5 bg-surface-bright/95 text-primary text-label-sm font-label-sm font-bold px-2.5 py-1 rounded-full border border-primary/20 flex items-center gap-1 shadow-sm">
+                  <span class="material-symbols-outlined text-[14px]" data-icon="qr_code_2">qr_code_2</span>
+                  <span>QR Incluido</span>
+                </span>
+              </div>
+              <div class="flex items-center gap-2 mb-1.5">
+                <span
+                  class="text-label-sm font-label-sm bg-primary-fixed/50 text-on-primary-fixed px-2 py-0.5 rounded-full font-semibold">Generacional</span>
+              </div>
+              <h3 class="text-title-md font-title-md text-on-surface font-semibold">Homenaje a los Abuelos</h3>
+              <p class="text-body-sm font-body-sm text-on-surface-variant line-clamp-2 mt-1">Con espacio para audio con
+                la voz de la familia y fotos antiguas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios Emocionales -->
+    <section class="py-20 bg-surface-container-low">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+          <span class="text-label-md font-label-md text-secondary uppercase tracking-widest font-bold">Historias
+            Reales</span>
+          <h2 class="text-headline-lg font-headline-lg text-on-surface mt-2">Momentos que cobran vida</h2>
+          <p class="text-body-md font-body-md text-on-surface-variant mt-3">
+            La emoción de descubrir que un objeto artesanal puede guardar la voz y las miradas más valiosas.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between">
+            <div>
+              <div class="flex text-secondary mb-4">
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="text-body-md font-body-md text-on-surface italic leading-relaxed">
+                "Le regalé a mi mamá una figura de nuestro perrito que partió este año. Cuando escaneó la base y sonó la
+                recopilación de videos con sus ladridos y fotos, no pudimos contener las lágrimas. Una obra de arte con
+                alma."
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+                <img class="w-full h-full object-cover"
+                  data-alt="A warm and gentle portrait of a smiling woman in her early thirties holding a miniature clay dog in her hands, photographed outdoors under soft afternoon sunlight. Light sage green tones, cozy knit sweater, and an authentic emotional glow."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuARDOXZzXxSGWn2Nw70LZp4a1axQQYs36XFxmODF9GkE1Bd6k3Yw_xd-ZZJdeLfllR_YgAevul4jIIUYbWBAHHvXuAattyMzyEcHGeJepipZQPuEwuO6N0kbSWWJAU7vwl01ocNQxMEQR-VVu9-888O9Y-jn5OdROIm2y9gqrZaIEYM-4sVwK1A6dDfzgz1tRPP9imgOYCmWRErWeeJTA33i6xBVuSHUPUlTWsBb-Q" />
+              </div>
+              <div>
+                <h4 class="text-label-lg font-label-lg font-bold text-on-surface">Camila Valenzuela</h4>
+                <p class="text-label-sm font-label-sm text-on-surface-variant">Santiago, Chile • Figura 'Tributo
+                  Mascotas'</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 2 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between">
+            <div>
+              <div class="flex text-secondary mb-4">
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="text-body-md font-body-md text-on-surface italic leading-relaxed">
+                "Para nuestro quinto aniversario quería algo distinto a los regalos convencionales. La réplica de
+                nuestra foto en el lago con nuestro QR que reproduce nuestros votos matrimoniales es ahora el centro de
+                nuestro hogar."
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+                <img class="w-full h-full object-cover"
+                  data-alt="Candid portrait of an affectionate couple smiling together at home, showcasing their handmade wooden base sculpture on a coffee table. Gentle natural indoor lighting, warm earthy colors, and soft sage green details reflecting pure joy."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJTAtCldBVN21_JKPRUmx5sNsrINEhTderwAfun7bU21IKwQKduPSK4bJROk4F6gwEU4YBDDtkqJY6V29s49IJnMpLRCJsmapcxWgH95l9GdnFqjSH5OrN-CecB1ACTSJBLtDRGFF4at9AEV8Ii338NvtY826uWb9GdPOe4FAWNAQpKZK0QS2aDIrwqm_W6UQfCjEoZx4sHaPtSsaVAR9OBLu8s-hFeWSERUfXhwM" />
+              </div>
+              <div>
+                <h4 class="text-label-lg font-label-lg font-bold text-on-surface">Martín &amp; Lucía</h4>
+                <p class="text-label-sm font-label-sm text-on-surface-variant">Valparaíso, Chile • Figura 'Pareja
+                  Aniversario'</p>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonial 3 -->
+          <div
+            class="bg-surface-container-lowest rounded-3xl p-8 shadow-warm-sm border border-outline-variant/30 flex flex-col justify-between">
+            <div>
+              <div class="flex text-secondary mb-4">
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+                <span class="material-symbols-outlined text-[20px]" data-icon="star"
+                  style="font-variation-settings: 'FILL' 1;">star</span>
+              </div>
+              <p class="text-body-md font-body-md text-on-surface italic leading-relaxed">
+                "La delicadeza del modelado es insuperable. Mi abuelo de 82 años aprendió a escanearlo de inmediato con
+                su teléfono y todos los domingos revisa las notas de voz que le dejamos sus nietos. Impagable."
+              </p>
+            </div>
+            <div class="mt-8 pt-4 border-t border-surface-container flex items-center gap-3">
+              <div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container flex-shrink-0">
+                <img class="w-full h-full object-cover"
+                  data-alt="A portrait of an elderly grandfather with kind expressive eyes holding a delicately carved miniature sculpture on his living room chair. Soft light pours from a nearby window, illuminating his gentle smile, earthy brown textiles, and peaceful craft aesthetic."
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDEEUtYeUi4het4E53Oqim2eUXaaOqXGTlwcA4TVLLvodHxK92Na2QgXyLZMcX75w-dXJYIyol8VQv7pcADH3bMCMFObT_WZegd-RwnRAwgJnKtIUat3qIkEmTiorD62orHCBzkVonSYC3KJi-HQ9e-CELC3Ln2nZC19N6Ymfe9r1pDpxPKNbLvEXyu93Up3N28EK6OZ-Aszj6TlcVawAgKccfSP3q5JI4jhpGtCU" />
+              </div>
+              <div>
+                <h4 class="text-label-lg font-label-lg font-bold text-on-surface">Francisca Morales</h4>
+                <p class="text-label-sm font-label-sm text-on-surface-variant">Concepción, Chile • Homenaje Familiar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call to Action Banner -->
+    <section class="py-16 bg-surface">
+      <div class="max-w-7xl mx-auto px-6 md:px-10">
+        <div
+          class="relative bg-primary-fixed/60 rounded-3xl p-10 md:p-16 overflow-hidden border border-primary-container/40 flex flex-col md:flex-row items-center justify-between gap-8">
+          <div class="max-w-xl z-10">
+            <span class="text-label-sm font-label-sm text-primary uppercase font-bold tracking-wider">¿Tienes una idea
+              en mente?</span>
+            <h2 class="text-headline-lg font-headline-lg text-on-surface mt-2">Demos vida juntos a ese recuerdo
+              inolvidable</h2>
+            <p class="text-body-md font-body-md text-on-surface-variant mt-3">
+              Envíanos tus fotografías y el mensaje que deseas perpetuar. Nuestro taller te asesorará paso a paso en el
+              diseño de tu figura personalizada.
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4 z-10 flex-shrink-0">
+            <a class="inline-flex items-center justify-center gap-2 bg-primary text-on-primary px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-primary-container hover:text-on-primary-container transition-all duration-200 shadow-warm-sm active:scale-95"
+              href="#personaliza">
+              <span class="material-symbols-outlined text-[20px]" data-icon="magic_button">magic_button</span>
+              <span>Comenzar mi recuerdo</span>
+            </a>
+            <a class="inline-flex items-center justify-center gap-2 border-2 border-primary text-primary px-8 py-3.5 rounded-full text-title-md font-title-md font-semibold hover:bg-surface-bright transition-all duration-200 active:scale-95"
+              href="#contacto">
+              <span>Hablar con un artesano</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Footer (Shared Component) -->
+  <footer class="bg-surface-container-high dark:bg-surface-container-high">
+    <div class="w-full py-12 px-6 md:px-12 max-w-7xl mx-auto flex flex-col gap-8">
+      <!-- Top Row: Brand & Newsletter -->
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-8 border-b border-outline-variant/30">
+        <!-- Logo & Philosophy -->
+        <div class="md:col-span-5 flex flex-col gap-4">
+          <div class="flex items-center gap-2">
+            <span class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-primary">
+              <span class="material-symbols-outlined text-title-md" data-icon="spa">spa</span>
+            </span>
+            <span class="text-headline-sm font-headline-sm text-secondary dark:text-secondary-fixed">
+              Pequeños Recuerdos
+            </span>
+          </div>
+          <p class="text-body-sm font-body-sm text-on-surface-variant max-w-sm">
+            Creaciones artesanales que unen la calidez del modelado manual con memorias multimedia eternas a través de
+            códigos QR discretos.
+          </p>
+          <div class="flex items-center gap-3 pt-2 text-secondary">
+            <a aria-label="Instagram"
+              class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-fixed hover:text-primary transition-colors"
+              href="#">
+              <span class="material-symbols-outlined text-[18px]" data-icon="photo_camera">photo_camera</span>
+            </a>
+            <a aria-label="Pinterest"
+              class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-fixed hover:text-primary transition-colors"
+              href="#">
+              <span class="material-symbols-outlined text-[18px]" data-icon="push_pin">push_pin</span>
+            </a>
+            <a aria-label="WhatsApp de taller"
+              class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-fixed hover:text-primary transition-colors"
+              href="#">
+              <span class="material-symbols-outlined text-[18px]" data-icon="chat">chat</span>
+            </a>
+          </div>
+        </div>
+        <!-- Links Navigation -->
+        <div class="md:col-span-3 flex flex-col gap-3">
+          <h4 class="text-title-md font-title-md text-primary dark:text-inverse-primary font-semibold">Enlaces de Ayuda
+          </h4>
+          <ul class="flex flex-col gap-2">
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="#">
+                Sello de Autenticidad
+              </a>
+            </li>
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="#">
+                Guía de Cuidados
+              </a>
+            </li>
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="#">
+                Configurador de Recuerdos
+              </a>
+            </li>
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="#">
+                Políticas de Envío
+              </a>
+            </li>
+            <li>
+              <a class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary rounded"
+                href="#">
+                Contacto Cálido
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Taller & Newsletter -->
+        <div class="md:col-span-4 flex flex-col gap-3">
+          <h4 class="text-title-md font-title-md text-primary dark:text-inverse-primary font-semibold">Cartas desde el
+            Taller</h4>
+          <p class="text-body-sm font-body-sm text-on-surface-variant">
+            Recibe relatos de nuestras creaciones, consejos para conservar recuerdos y acceso anticipado a cupos
+            mensuales de modelado.
+          </p>
+          <form class="flex items-center gap-2 mt-2" onsubmit="event.preventDefault();">
+            <input
+              class="w-full bg-surface-container-lowest text-body-sm font-body-sm px-4 py-2.5 rounded-full border border-outline-variant/40 focus:border-primary focus:ring-1 focus:ring-primary outline-none"
+              placeholder="tu.correo@ejemplo.cl" required="" type="email" />
+            <button
+              class="bg-primary text-on-primary px-5 py-2.5 rounded-full text-label-md font-label-md font-bold hover:bg-primary-container hover:text-on-primary-container transition-colors flex-shrink-0"
+              type="submit">
+              Unirme
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Bottom Row: Copyright & Assurance -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <p class="text-body-sm font-body-sm text-on-surface-variant dark:text-on-surface-variant">
+          © 2024 Pequeños Recuerdos, Grandes Historias. Hecho con amor y paciencia artesanal.
+        </p>
+        <div class="flex items-center gap-6 text-label-md font-label-md text-on-surface-variant">
+          <span class="inline-flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px] text-primary" data-icon="lock">lock</span>
+            <span>QR seguro e inviolable</span>
+          </span>
+          <span class="inline-flex items-center gap-1">
+            <span class="material-symbols-outlined text-[16px] text-primary"
+              data-icon="local_shipping">local_shipping</span>
+            <span>Envíos protegidos a todo el país</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

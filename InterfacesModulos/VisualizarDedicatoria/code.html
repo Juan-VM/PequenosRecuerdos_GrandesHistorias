@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>En honor a Luna | Pequeños Recuerdos</title>
+  <!-- Google Fonts: Quicksand & Nunito Sans + Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,300..800;1,6..12,300..800&amp;family=Quicksand:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary": "#7e5630",
+            "on-surface": "#1d1b16",
+            "surface-container": "#f3ede4",
+            "on-tertiary": "#ffffff",
+            "primary-fixed": "#d9e8bd",
+            "tertiary-container": "#c89992",
+            "on-error": "#ffffff",
+            "surface-container-highest": "#e7e2d9",
+            "surface-tint": "#556340",
+            "surface-bright": "#fff9ef",
+            "on-background": "#1d1b16",
+            "surface-container-high": "#ede7df",
+            "surface-variant": "#e7e2d9",
+            "on-secondary-container": "#79512c",
+            "inverse-on-surface": "#f6f0e7",
+            "surface": "#fff9ef",
+            "on-primary-container": "#323f1f",
+            "background": "#fff9ef",
+            "outline": "#76786e",
+            "secondary-fixed": "#ffdcc0",
+            "error": "#ba1a1a",
+            "primary": "#556340",
+            "on-primary-fixed": "#141f04",
+            "tertiary-fixed-dim": "#edbbb4",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ffdad5",
+            "surface-container-lowest": "#ffffff",
+            "surface-dim": "#dfd9d1",
+            "secondary-fixed-dim": "#f1bc8e",
+            "on-tertiary-container": "#53312d",
+            "on-error-container": "#93000a",
+            "on-secondary-fixed-variant": "#633f1b",
+            "outline-variant": "#c6c8bb",
+            "inverse-surface": "#32302a",
+            "primary-container": "#9baa82",
+            "error-container": "#ffdad6",
+            "secondary-container": "#fdc798",
+            "tertiary": "#7c554f",
+            "primary-fixed-dim": "#bdcca2",
+            "inverse-primary": "#bdcca2",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#2d1600",
+            "on-primary-fixed-variant": "#3e4b2b",
+            "on-tertiary-fixed": "#2f1310",
+            "surface-container-low": "#f9f3ea",
+            "on-surface-variant": "#45483f",
+            "on-tertiary-fixed-variant": "#613e39"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "2.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "margin-mobile": "1.25rem",
+            "gutter": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2.5rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Quicksand"],
+            "label-md": ["Nunito Sans"],
+            "headline-lg": ["Quicksand"],
+            "label-lg": ["Nunito Sans"],
+            "body-lg": ["Nunito Sans"],
+            "title-md": ["Quicksand"],
+            "headline-sm": ["Quicksand"],
+            "headline-lg-mobile": ["Quicksand"],
+            "body-md": ["Nunito Sans"],
+            "display-lg": ["Quicksand"],
+            "headline-md": ["Quicksand"],
+            "label-sm": ["Nunito Sans"],
+            "body-sm": ["Nunito Sans"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["34px", { "lineHeight": "42px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "600" }],
+            "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "20px", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "500" }],
+            "headline-lg-mobile": ["26px", { "lineHeight": "34px", "fontWeight": "600" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-lg": ["48px", { "lineHeight": "56px", "fontWeight": "600" }],
+            "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "fontWeight": "700" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+
+    .shadow-warm-subtle {
+      box-shadow: 0 4px 20px -2px rgba(68, 60, 52, 0.06);
+    }
+
+    .shadow-warm-hover {
+      box-shadow: 0 12px 32px -4px rgba(68, 60, 52, 0.10);
+    }
+
+    @keyframes pulse-subtle {
+
+      0%,
+      100% {
+        opacity: 0.95;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.02);
+      }
+    }
+
+    .animate-gentle {
+      animation: pulse-subtle 4s ease-in-out infinite;
+    }
+
+    .audio-bar {
+      transition: height 0.25s ease-in-out;
+    }
+  </style>
+  <style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-surface text-on-surface antialiased min-h-screen selection:bg-secondary-fixed selection:text-secondary flex flex-col items-center">
+  <!-- Mobile Screen Container -->
+  <div class="w-full max-w-md bg-surface min-h-screen relative flex flex-col pb-36 shadow-warm-subtle">
+    <!-- Top Header Bar -->
+    <header
+      class="sticky top-0 z-30 bg-surface/90 backdrop-blur-md px-5 py-4 flex items-center justify-between border-b border-surface-container-highest">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-2xl" data-icon="auto_awesome">auto_awesome</span>
+        <span class="font-headline-sm text-headline-sm text-secondary tracking-tight">Pequeños Recuerdos</span>
+      </div>
+
+    </header>
+    <!-- Context Meta Banner / Badges -->
+    <div class="px-5 pt-5 pb-2 flex flex-col gap-2">
+      <div class="flex flex-wrap items-center gap-2">
+        <span
+          class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/40">
+          <span class="material-symbols-outlined text-sm text-primary" data-icon="qr_code_2">qr_code_2</span>
+          Escaneado desde figura artesanal #PR-8924
+        </span>
+      </div>
+      <p class="font-body-sm text-body-sm text-outline px-1">recuerdostesorados.cl/qr/luna-2021</p>
+    </div>
+    <!-- Main Memorial Hero -->
+    <section class="px-5 pt-3 pb-6 text-center">
+      <h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+        En honor a nuestra amada Luna
+      </h1>
+      <div
+        class="inline-flex items-center justify-center gap-2 mt-2 px-3 py-0.5 rounded-full bg-surface-container-low text-secondary font-label-md text-label-md">
+        <span class="material-symbols-outlined text-base" data-icon="calendar_today">calendar_today</span>
+        <span>14 de Febrero de 2021</span>
+      </div>
+    </section>
+    <!-- Hero Photography Card (Polaroid Handcrafted Style) -->
+    <section class="px-5 mb-8">
+      <div
+        class="bg-surface-container-lowest p-3 pb-5 rounded-2xl border border-primary-container/30 shadow-warm-subtle transform rotate-[-0.7deg] transition-transform duration-300 hover:rotate-0">
+        <div class="aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container relative">
+          <img class="w-full h-full object-cover"
+            data-alt="A touching portrait of a gentle golden-colored mixed-breed dog named Luna, sitting warmly bathed in golden-hour sunlight on a rustic wooden terrace. The scene is illuminated by soft natural light creating a tender and serene atmosphere. Her soulful brown eyes look kindly at the camera with gentle reflections, surrounded by organic warmth, sage green leaves in the background, and comforting earthy tones."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuArckIsNpYXJ8jiNT6JDnuyBtS4bDquXe93Lyfec1PCv_WTkw5As3TIDRUJB1EGaEZv1LtBq5zFNEuL878bzg70dhEFzNEMZ7Ud-k9-dFE-V8xitoz4zKgabJBFiuvaq_ioq2IoNyQmMlarVG_UZDzn6YbyCChr4HrzzsJXho9lGN__oMpIMeFDXB2Qm_Yx3Xekw5KY_o5Y1JKhOmFccqJ069xi6UXV3W0Kj0x2-AA" />
+          <div
+            class="absolute bottom-3 right-3 bg-surface/90 backdrop-blur-sm px-2.5 py-1 rounded-full flex items-center gap-1 text-on-surface-variant font-label-sm text-label-sm">
+            <span class="material-symbols-outlined text-xs text-secondary" data-icon="pets"
+              style="font-variation-settings: 'FILL' 1;">pets</span>
+            <span>Para siempre en el alma</span>
+          </div>
+        </div>
+        <div class="pt-3 px-2 flex justify-between items-center text-outline">
+          <span class="font-title-md text-title-md text-secondary tracking-wide">Nuestra pequeña guardiana</span>
+          <span class="font-label-sm text-label-sm text-on-surface-variant">2009 — 2021</span>
+        </div>
+      </div>
+    </section>
+    <!-- Handcrafted Letter / Dedication Section -->
+    <section class="px-5 mb-8">
+      <div
+        class="bg-surface-container-low rounded-2xl p-6 border border-secondary-fixed-dim/40 shadow-warm-subtle relative overflow-hidden">
+        <div class="absolute -right-4 -bottom-4 text-surface-container-high opacity-40 select-none">
+          <span class="material-symbols-outlined text-8xl" data-icon="format_quote">format_quote</span>
+        </div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="material-symbols-outlined text-secondary text-lg" data-icon="edit_note">edit_note</span>
+          <span class="font-headline-sm text-headline-sm text-secondary">Carta a Luna</span>
+        </div>
+        <p class="font-body-md text-body-md text-on-surface leading-relaxed italic relative z-10">
+          “Gracias por 12 años de amor incondicional, colitas felices y siestas bajo el sol tibio. Te llevamos para
+          siempre en cada rincón del corazón y de este hogar.”
+        </p>
+        <div class="mt-4 pt-3 border-t border-outline-variant/30 flex justify-between items-center relative z-10">
+          <span class="font-label-md text-label-md text-on-surface-variant font-medium">Familia Morales Rivera</span>
+          <span class="material-symbols-outlined text-tertiary text-base" data-icon="favorite"
+            style="font-variation-settings: 'FILL' 1;">favorite</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memories Gallery (Carousel / Asymmetric Mosaic) -->
+    <section class="px-5 mb-8">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="font-headline-sm text-headline-sm text-on-surface">Momentos Felices</h2>
+        <span class="font-label-md text-label-md text-secondary font-medium">4 instantes de luz</span>
+      </div>
+      <!-- Bento-style Photographic Grid -->
+      <div class="grid grid-cols-2 gap-3">
+        <!-- Photo 1: Puppy -->
+        <div
+          class="bg-surface-container-lowest p-2 rounded-2xl border border-outline-variant/30 shadow-warm-subtle flex flex-col gap-2">
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover"
+              data-alt="A delicate, heartwarming scene of a golden puppy sleeping on a pale sage green woven blanket, surrounded by soft morning light. The photograph exudes tender craftsmanship and warmth with earthy textures, light wood accents, and warm cream background tones. A peaceful, intimate visual capturing the pet's earliest days."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyM4yxqtU3Y8g-ZX-u13BlmPvC5La6H7G_ebrC7dPHzwstNJsry_zQfkjkaTFvuyhUEeunF6jS_ppMhsA6fz2b_5UUzkYPAUCe13XoBowXy4oGpelAV8bFgBY-McPd7Ymx1a36huFXVheIYsxwvqvQ0YmRvSoNbpPKs8N8L_hojO5tgh1CM5q4LOXAxSmnQLU-zSJ9sfJcV2-HeQeBmTYqEctQSUwvdlKbA0UzlX0" />
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-medium px-1">Luna de cachorrita</p>
+        </div>
+        <!-- Photo 2: Beach -->
+        <div
+          class="bg-surface-container-lowest p-2 rounded-2xl border border-outline-variant/30 shadow-warm-subtle flex flex-col gap-2">
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover"
+              data-alt="An energetic yet gentle photo of a golden rescue dog running joyfully on a quiet beach during sunrise. Soft ambient illumination shines across the wet sand, reflecting pastel warm tones of sage and rose. The ocean breeze moves through her fur, evoking freedom, boundless happiness, and eternal gratitude."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPcTZs_qs79vQSYuqK55vtr_SrRD0a1JPTWuQWe0HfqM85wjMO0nFyIXGnUpPfwGCrRkRHSVaXwgo7QynfXCJ1sUwb0Jlc3EceNEovxuuW985qGg0GsG6nJbvkDH2Bkkpv43jRxuVTAjBSkrwS5XbnH12WNfBZA4Ec1vrpO852C9mW-8EiL9JU3UQL1gJHTAPqC3guS60Y-NRhyeEjriQI6Pz65xv-XAJXPN-BaLs" />
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-medium px-1">Jugando en la playa</p>
+        </div>
+        <!-- Photo 3: Sleeping Couch -->
+        <div
+          class="bg-surface-container-lowest p-2 rounded-2xl border border-outline-variant/30 shadow-warm-subtle flex flex-col gap-2">
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover"
+              data-alt="A close-up shot of an elderly gentle dog sleeping peacefully curled up on an artisan beige linen couch with dusty pink cushions nearby. The warm afternoon sun filters through cotton curtains creating gentle shadows and a tranquil, cozy sanctuary mood in the home."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsz9GZViTdmFA0EbU-TXpytEiF2aN3rC8YzR0DkV3qyfmutHfDe9JT9J7sGWHbr--5zD17nbUmtTVZy0-Ai-pNK11QPD-YNulZohUhG3pOl7lzRVhFzzu9TVdtymP7zNE8Tkfx4udOtJpLwpBh1qRdGgGdyKRvP0w_IOlmKRXOvhNZF44nzEvEtdtHUkoDG2KCFs2uktlqhlvlyBj_m-o4OCI2GzX-uimAaKXi-XQ" />
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-medium px-1">Durmiendo en el sillón</p>
+        </div>
+        <!-- Photo 4: Family -->
+        <div
+          class="bg-surface-container-lowest p-2 rounded-2xl border border-outline-variant/30 shadow-warm-subtle flex flex-col gap-2">
+          <div class="aspect-square rounded-xl overflow-hidden bg-surface-container">
+            <img class="w-full h-full object-cover"
+              data-alt="A tender and candid snapshot of a family gently hugging their beloved golden retriever dog in a sun-drenched living room. Natural daylight, warm oak wood furniture, and soft earth tones evoke an authentic, heartfelt moment of eternal connection and affection."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzhrRsHEw8Nsore338l1tKHQytgF6D-snQ5FRXKT5nls6HHa7afTXlao6zMmz9gHY02Npujybg_lr06Bs5LWTE4T3zxpHpSJBhkJLRv4PV9dLjFtKPsHh6TuPfZn785RSfJbJ1HJ1EatNl876FbnEY98aeZKpmzHV9kpS2hDMtHnZXExEkDT_-O-C0Q89L8Qa-qiO9ItkQEXHfhCXmywUfrQyTwDiMiVx7AGQazvU" />
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface-variant font-medium px-1">Con su familia</p>
+        </div>
+      </div>
+    </section>
+    <!-- The Clay Figurine Story & Origin -->
+    <section class="px-5 mb-8">
+      <div class="bg-surface-container-high rounded-2xl p-5 border border-primary-container/20">
+        <div class="flex items-center gap-2 mb-3">
+          <span class="material-symbols-outlined text-secondary" data-icon="brush">brush</span>
+          <h2 class="font-headline-sm text-headline-sm text-secondary">La Historia de la Figura</h2>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 items-center">
+          <div
+            class="w-full sm:w-32 h-36 rounded-xl overflow-hidden bg-surface-container-lowest flex-shrink-0 border border-outline-variant/40 shadow-sm">
+            <img class="w-full h-full object-cover"
+              data-alt="A handcrafted polymer clay miniature sculpture of a sweet golden dog, positioned on a smooth turned solid oak base placed on a cozy mantelpiece next to a dried flower arrangement. The atmosphere is warm, gentle, and artisanal, illuminated by diffuse natural workshop light in a light cream and sage green ambiance."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDp9Km1AZPQ9EbQDHBzZE0rygMwphLlIX680Vgdp2obdjLZraMo_692ku59GycTsSl5kR3wTkUJJyFlr7UxbYPm-ZTpGx8Z_pSOFUy48WQlbeHjWByUNbEb4W6YwHt0-Gl3h7TelLFglNnAM5fWynxeLy8h2_WNo4qcy1gafwII4A9TM3vVlkVdT18JS3xZhTxVMgk-cZo8hUlRvWfs1WnEDsq2tTlOiBqwDaFdXg4" />
+          </div>
+          <div class="flex-1">
+            <p class="font-body-sm text-body-sm text-on-surface leading-relaxed">
+              Esta escultura fue modelada a mano en arcilla polimérica y base de roble por manos artesanas para recordar
+              tu luz para siempre.
+            </p>
+            <div class="mt-3 flex items-center gap-1.5 text-primary font-label-md text-label-md">
+              <span class="material-symbols-outlined text-base" data-icon="verified">verified</span>
+              <span>Taller Pequeños Recuerdos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Shared Footnote / Seal -->
+    <div class="px-6 py-4 text-center">
+      <div class="w-10 h-0.5 bg-outline-variant/50 mx-auto mb-4 rounded-full"></div>
+      <p class="font-body-sm text-body-sm text-on-surface-variant">
+        © 2024 Pequeños Recuerdos, Grandes Historias. Hecho con amor y paciencia artesanal.
+      </p>
+    </div>
+
+    <!-- Interactive Logic -->
+    <script>
+      // Modal Interactions
+      const openModalBtn = document.getElementById('open-message-modal');
+      const closeModalBtn = document.getElementById('close-modal');
+      const modal = document.getElementById('message-modal');
+      const submitMsgBtn = document.getElementById('submit-message');
+
+      openModalBtn.addEventListener('click', () => {
+        modal.classList.remove('hidden');
+      });
+
+      closeModalBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+      });
+
+      submitMsgBtn.addEventListener('click', () => {
+        modal.classList.add('hidden');
+        showToast('Mensaje de cariño enviado a la familia');
+      });
+
+      const createBtn = document.getElementById('create-remembrance');
+      createBtn.addEventListener('click', () => {
+        showToast('Redirigiendo a configurar un nuevo recuerdo...');
+      });
+
+      // Toast Helper
+      function showToast(message) {
+        const toast = document.getElementById('toast');
+        const toastText = document.getElementById('toast-text');
+        toastText.textContent = message;
+        toast.classList.remove('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          toast.classList.add('opacity-0', 'pointer-events-none');
+        }, 3000);
+      }
+    </script>
+</body>
+
+</html>
