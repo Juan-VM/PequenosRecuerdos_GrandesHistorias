@@ -1,0 +1,24 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "rewrites": [
+    { "source": "/", "destination": "/InterfacesModulos/Inicio/code.html" },
+
+    { "source": "/Inicio", "destination": "/InterfacesModulos/Inicio/code.html" },
+    { "source": "/Inicio/:path*", "destination": "/InterfacesModulos/Inicio/:path*" },
+
+    { "source": "/Catalogo", "destination": "/InterfacesModulos/Catalogo/code.html" },
+    { "source": "/Catalogo/:path*", "destination": "/InterfacesModulos/Catalogo/:path*" },
+
+    { "source": "/PersonalizarFigura", "destination": "/InterfacesModulos/PersonalizarFigura/code.html" },
+    { "source": "/PersonalizarFigura/:path*", "destination": "/InterfacesModulos/PersonalizarFigura/:path*" },
+
+    { "source": "/VisualizarDedicatoria", "destination": "/InterfacesModulos/VisualizarDedicatoria/code.html" },
+    { "source": "/VisualizarDedicatoria/:path*", "destination": "/InterfacesModulos/VisualizarDedicatoria/:path*" },
+
+    { "source": "/PanelAdministracion", "destination": "/InterfacesModulos/PanelAdministracion/code.html" },
+    { "source": "/PanelAdministracion/:path*", "destination": "/InterfacesModulos/PanelAdministracion/:path*" },
+
+    { "source": "/assets/:path*", "destination": "/InterfacesModulos/assets/:path*" },
+    { "source": "/img/:path*", "destination": "/InterfacesModulos/img/:path*" }
+  ]
+}
